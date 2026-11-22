@@ -1,0 +1,801 @@
+transaction_id,episode_id,date,time,amount,invoice_amount,category,account_id,account_type,account_age_days,account_country,tx_country,doc_status_initial,velocity,country_mismatch,off_hours,round_amount,near_threshold,new_account,amount_ratio,risk_score,risk_level,status,split,is_suspicious,anomaly_type
+TX-T00-001,train-00,2026-01-06,11:48,30117.4,30117.4,International Wire,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,5.02,0.3,Medium,Posted,train,True,large_amount
+TX-T00-002,train-00,2026-01-06,12:37,3939.61,3939.61,Payroll,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.88,0.1,Low,Posted,train,False,
+TX-T00-003,train-00,2026-01-07,04:13,9811.1,9811.1,Vendor Payment,ACC-1018,Payroll,15,AE,KZ,available,1,1,1,0,1,1,3.5,0.8,High,Under Review,train,True,foreign_offhours
+TX-T00-004,train-00,2026-01-07,10:03,170.71,170.71,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.38,0.0,Low,Posted,train,False,
+TX-T00-005,train-00,2026-01-07,15:52,700.0,700.0,Software Subscription,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.78,0.0,Low,Posted,train,False,
+TX-T00-006,train-00,2026-01-07,16:45,457.1,457.1,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.02,0.0,Low,Posted,train,False,
+TX-T00-007,train-00,2026-01-08,13:42,32228.54,32228.54,International Wire,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,5.37,0.3,Medium,Posted,train,True,large_amount
+TX-T00-008,train-00,2026-01-09,03:04,1645.11,1645.11,Utilities,ACC-1018,Payroll,15,AE,KZ,available,1,1,1,0,0,1,2.74,0.45,Medium,Posted,train,True,foreign_offhours
+TX-T00-009,train-00,2026-01-09,08:40,200.0,200.0,Office Supplies,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.33,0.0,Low,Posted,train,False,
+TX-T00-010,train-00,2026-01-09,09:47,946.11,946.11,Software Subscription,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.05,0.0,Low,Posted,train,False,
+TX-T00-011,train-00,2026-01-09,19:57,6000.0,6000.0,International Wire,ACC-1020,Treasury,45,TR,GB,missing,1,1,0,1,0,1,1.0,0.6,High,Under Review,train,False,
+TX-T00-012,train-00,2026-01-10,04:43,11026.59,11026.59,International Wire,ACC-1008,Treasury,655,KZ,KZ,available,1,0,1,0,0,0,1.84,0.1,Low,Posted,train,False,
+TX-T00-013,train-00,2026-01-10,09:08,5524.86,5524.86,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.23,0.0,Low,Posted,train,False,
+TX-T00-014,train-00,2026-01-10,13:24,290.33,290.33,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.65,0.0,Low,Posted,train,False,
+TX-T00-015,train-00,2026-01-10,19:51,82.94,82.94,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.55,0.0,Low,Pending,train,False,
+TX-T00-016,train-00,2026-01-11,09:30,3448.88,3448.88,International Wire,ACC-1002,Payroll,1607,KZ,KZ,available,2,0,0,0,0,0,0.57,0.05,Low,Posted,train,False,
+TX-T00-017,train-00,2026-01-11,12:15,715.35,715.35,Software Subscription,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.79,0.0,Low,Posted,train,False,
+TX-T00-018,train-00,2026-01-11,12:17,5609.53,5609.53,International Wire,ACC-1007,Vendor,2104,KZ,KZ,missing,1,0,0,0,0,0,0.93,0.25,Medium,Pending,train,False,
+TX-T00-019,train-00,2026-01-11,14:29,8500.0,8500.0,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,1,0,0,3.04,0.4,Medium,Posted,train,False,
+TX-T00-020,train-00,2026-01-11,17:15,300.0,300.0,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,2,0,0,0,0,0,0.86,0.05,Low,Pending,train,False,
+TX-T00-021,train-00,2026-01-12,09:13,2120.53,2120.53,Vendor Payment,ACC-1010,Payroll,834,KZ,AE,available,1,1,0,0,0,0,0.76,0.15,Low,Posted,train,False,
+TX-T00-022,train-00,2026-01-12,14:41,1205.33,1410.35,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,2.68,0.1,Low,Posted,train,True,record_mismatch
+TX-T00-023,train-00,2026-01-12,17:54,3695.79,3695.79,Payroll,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,train,False,
+TX-T00-024,train-00,2026-01-12,19:23,883.19,883.19,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.47,0.0,Low,Posted,train,False,
+TX-T00-025,train-00,2026-01-13,10:47,183.72,183.72,Office Supplies,ACC-1019,Vendor,30,GB,US,available,1,1,0,0,0,1,1.22,0.25,Medium,Pending,train,False,
+TX-T00-026,train-00,2026-01-13,14:02,8077.76,8077.76,International Wire,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.35,0.0,Low,Posted,train,False,
+TX-T00-027,train-00,2026-01-13,16:54,349.36,349.36,Client Refund,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.0,0.0,Low,Pending,train,False,
+TX-T00-028,train-00,2026-01-14,18:29,5718.51,5718.51,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.27,0.0,Low,Posted,train,False,
+TX-T00-029,train-00,2026-01-15,10:16,3884.24,3884.24,Payroll,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.86,0.0,Low,Posted,train,False,
+TX-T00-030,train-00,2026-01-15,12:32,67.03,67.03,Office Supplies,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.45,0.1,Low,Pending,train,False,
+TX-T00-031,train-00,2026-01-15,13:22,710.5,710.5,Utilities,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.18,0.0,Low,Posted,train,False,
+TX-T00-032,train-00,2026-01-15,18:09,611.04,611.04,Utilities,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.02,0.0,Low,Posted,train,False,
+TX-T00-033,train-00,2026-01-16,11:13,778.82,778.82,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,missing,1,0,0,0,0,0,1.73,0.25,Medium,Posted,train,True,missing_document
+TX-T00-034,train-00,2026-01-16,15:15,1112.43,1112.43,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,2.47,0.1,Low,Posted,train,False,
+TX-T00-035,train-00,2026-01-16,16:14,500.0,500.0,Software Subscription,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.56,0.0,Low,Posted,train,False,
+TX-T00-036,train-00,2026-01-16,19:38,2717.89,2717.89,Vendor Payment,ACC-1018,Payroll,15,AE,AE,missing,1,0,0,0,0,1,0.97,0.35,Medium,Posted,train,False,
+TX-T00-037,train-00,2026-01-17,16:08,4969.13,4969.13,Utilities,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,8.28,0.3,Medium,Posted,train,True,large_amount
+TX-T00-038,train-00,2026-01-17,16:20,13115.72,13115.72,International Wire,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,2.19,0.1,Low,Posted,train,False,
+TX-T00-039,train-00,2026-01-18,08:21,174.43,174.43,Office Supplies,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.16,0.0,Low,Posted,train,False,
+TX-T00-040,train-00,2026-01-18,23:27,527.73,527.73,Utilities,ACC-1014,Payroll,132,KZ,KZ,available,1,0,1,0,0,0,0.88,0.1,Low,Posted,train,False,
+TX-T01-001,train-01,2026-01-19,14:05,278.21,278.21,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.62,0.0,Low,Posted,train,False,
+TX-T01-002,train-01,2026-01-19,16:46,833.48,833.48,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.85,0.0,Low,Posted,train,False,
+TX-T01-003,train-01,2026-01-19,17:07,3800.49,3800.49,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.84,0.0,Low,Posted,train,False,
+TX-T01-004,train-01,2026-01-19,19:24,9170.0,9170.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,missing,2,0,0,0,1,0,1.53,0.45,Medium,Posted,train,True,structuring
+TX-T01-005,train-01,2026-01-19,19:37,5562.36,5562.36,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,1.99,0.25,Medium,Posted,train,False,
+TX-T01-006,train-01,2026-01-19,19:47,9810.0,9810.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,1.64,0.2,Low,Posted,train,True,structuring
+TX-T01-007,train-01,2026-01-20,03:21,6419.68,6419.68,Payroll,ACC-1020,Treasury,45,TR,TR,missing,1,0,1,0,0,1,1.43,0.45,Medium,Posted,train,True,missing_document
+TX-T01-008,train-01,2026-01-20,14:32,6912.46,6912.46,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.15,0.0,Low,Posted,train,False,
+TX-T01-009,train-01,2026-01-21,08:48,14015.26,14015.26,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,missing,1,0,0,0,0,0,5.01,0.55,High,Under Review,train,True,large_amount
+TX-T01-010,train-01,2026-01-21,13:38,4022.97,4022.97,Vendor Payment,ACC-1020,Treasury,45,TR,US,available,1,1,0,0,0,1,1.44,0.25,Medium,Posted,train,False,
+TX-T01-011,train-01,2026-01-21,14:24,3263.61,3263.61,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,7.25,0.3,Medium,Posted,train,True,large_amount
+TX-T01-012,train-01,2026-01-21,18:39,9532.86,8382.95,International Wire,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,1,0,1.59,0.15,Low,Posted,train,True,record_mismatch
+TX-T01-013,train-01,2026-01-21,18:39,237.71,237.71,Office Supplies,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.58,0.0,Low,Posted,train,False,
+TX-T01-014,train-01,2026-01-22,10:10,5229.92,5229.92,Payroll,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.16,0.0,Low,Pending,train,False,
+TX-T01-015,train-01,2026-01-24,10:07,5612.76,5612.76,Payroll,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.25,0.0,Low,Posted,train,False,
+TX-T01-016,train-01,2026-01-24,12:09,485.35,485.35,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.54,0.1,Low,Pending,train,False,
+TX-T01-017,train-01,2026-01-24,14:55,18960.79,18960.79,Vendor Payment,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,6.77,0.3,Medium,Posted,train,True,large_amount
+TX-T01-018,train-01,2026-01-24,16:28,556.99,556.99,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.24,0.0,Low,Posted,train,False,
+TX-T01-019,train-01,2026-01-24,17:39,3817.52,3817.52,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.85,0.1,Low,Posted,train,False,
+TX-T01-020,train-01,2026-01-25,08:10,4113.86,4113.86,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.47,0.0,Low,Posted,train,False,
+TX-T01-021,train-01,2026-01-25,09:38,295.69,295.69,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.66,0.0,Low,Posted,train,False,
+TX-T01-022,train-01,2026-01-26,17:54,395.59,395.59,Client Refund,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.13,0.0,Low,Posted,train,False,
+TX-T01-023,train-01,2026-01-26,19:22,622.28,622.28,Utilities,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.04,0.1,Low,Posted,train,False,
+TX-T01-024,train-01,2026-01-27,08:18,1802.13,1802.13,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,0.64,0.05,Low,Posted,train,False,
+TX-T01-025,train-01,2026-01-27,10:22,3687.68,3687.68,Payroll,ACC-1019,Vendor,30,GB,GB,missing,1,0,0,0,0,1,0.82,0.35,Medium,Posted,train,False,
+TX-T01-026,train-01,2026-01-27,18:26,593.51,593.51,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,1.32,0.05,Low,Pending,train,False,
+TX-T01-027,train-01,2026-01-27,19:50,423.32,423.32,Travel & Expenses,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.94,0.0,Low,Posted,train,False,
+TX-T01-028,train-01,2026-01-28,17:48,595.19,595.19,Utilities,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.99,0.0,Low,Posted,train,False,
+TX-T01-029,train-01,2026-01-30,01:42,640.12,640.12,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,1,0,0,0,1.42,0.1,Low,Posted,train,False,
+TX-T01-030,train-01,2026-01-30,09:32,4735.91,4735.91,Payroll,ACC-1013,Operating,2292,KZ,KZ,missing,1,0,0,0,0,0,1.05,0.25,Medium,Posted,train,True,missing_document
+TX-T01-031,train-01,2026-01-30,11:23,1368.4,1368.4,Software Subscription,ACC-1018,Payroll,15,AE,AE,missing,1,0,0,0,0,1,1.52,0.35,Medium,Posted,train,False,
+TX-T01-032,train-01,2026-01-30,13:10,405.62,405.62,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.9,0.0,Low,Posted,train,False,
+TX-T01-033,train-01,2026-01-31,00:00,376.42,376.42,Travel & Expenses,ACC-1007,Vendor,2104,KZ,DE,missing,1,1,1,0,0,0,0.84,0.5,High,Under Review,train,False,
+TX-T01-034,train-01,2026-01-31,08:09,5980.46,5980.46,Payroll,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.33,0.0,Low,Posted,train,False,
+TX-T01-035,train-01,2026-01-31,13:18,112.33,112.33,Client Refund,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.32,0.0,Low,Posted,train,False,
+TX-T01-036,train-01,2026-02-01,08:49,558.46,424.34,Travel & Expenses,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.24,0.0,Low,Pending,train,True,record_mismatch
+TX-T01-037,train-01,2026-02-01,10:41,427.77,427.77,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,2,0,0,0,0,0,0.95,0.05,Low,Posted,train,False,
+TX-T01-038,train-01,2026-02-01,10:42,8744.87,8744.87,Vendor Payment,ACC-1020,Treasury,45,TR,TR,missing,2,0,0,0,0,1,3.12,0.7,High,Under Review,train,True,missing_document
+TX-T01-039,train-01,2026-02-01,11:45,1103.61,1103.61,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,2,0,0,0,0,1,1.23,0.15,Low,Posted,train,False,
+TX-T01-040,train-01,2026-02-01,17:26,362.8,362.8,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,2,0,0,0,0,0,0.81,0.05,Low,Posted,train,False,
+TX-T02-001,train-02,2026-02-02,09:15,549.6,549.6,Software Subscription,ACC-1014,Payroll,132,KZ,KZ,available,2,0,0,0,0,0,0.61,0.05,Low,Posted,train,False,
+TX-T02-002,train-02,2026-02-02,13:31,674.64,674.64,Software Subscription,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.75,0.1,Low,Posted,train,False,
+TX-T02-003,train-02,2026-02-02,14:37,9570.0,9570.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,1,0,3.42,0.45,Medium,Posted,train,True,structuring
+TX-T02-004,train-02,2026-02-02,18:07,221.39,221.39,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.49,0.0,Low,Posted,train,False,
+TX-T02-005,train-02,2026-02-02,23:45,141.51,141.51,Office Supplies,ACC-1014,Payroll,132,KZ,KZ,available,2,0,1,0,0,0,0.94,0.15,Low,Posted,train,False,
+TX-T02-006,train-02,2026-02-03,00:16,406.38,406.38,Client Refund,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,1,0,0,0,1.16,0.1,Low,Posted,train,False,
+TX-T02-007,train-02,2026-02-03,09:26,606.73,606.73,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,1.35,0.05,Low,Posted,train,False,
+TX-T02-008,train-02,2026-02-03,10:24,1436.83,1436.83,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,0.51,0.05,Low,Posted,train,False,
+TX-T02-009,train-02,2026-02-03,12:11,262.58,262.58,Office Supplies,ACC-1011,Vendor,798,KZ,DE,missing,1,1,0,0,0,0,1.75,0.4,Medium,Posted,train,False,
+TX-T02-010,train-02,2026-02-04,02:15,9184.17,9184.17,Vendor Payment,ACC-1019,Vendor,30,GB,AE,available,1,1,1,0,1,1,3.28,0.8,High,Under Review,train,True,foreign_offhours
+TX-T02-011,train-02,2026-02-04,14:54,788.55,788.55,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.88,0.1,Low,Posted,train,False,
+TX-T02-012,train-02,2026-02-04,18:36,7611.69,7611.69,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,2,0,0,0,0,0,2.72,0.15,Low,Posted,train,False,
+TX-T02-013,train-02,2026-02-04,19:02,2691.36,2691.36,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,2,0,0,0,0,0,0.96,0.05,Low,Posted,train,False,
+TX-T02-014,train-02,2026-02-05,09:09,3038.04,3595.6,Payroll,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Posted,train,True,record_mismatch
+TX-T02-015,train-02,2026-02-06,03:00,4500.0,4500.0,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,1,1,0,0,1.0,0.2,Low,Posted,train,False,
+TX-T02-016,train-02,2026-02-06,17:01,1969.56,1969.56,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.7,0.0,Low,Posted,train,False,
+TX-T02-017,train-02,2026-02-06,18:39,11184.15,11184.15,International Wire,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.86,0.0,Low,Posted,train,False,
+TX-T02-018,train-02,2026-02-06,18:47,999.48,999.48,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.11,0.0,Low,Posted,train,False,
+TX-T02-019,train-02,2026-02-07,13:05,454.87,454.87,Software Subscription,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.51,0.0,Low,Posted,train,False,
+TX-T02-020,train-02,2026-02-08,09:43,300.55,338.63,Client Refund,ACC-1014,Payroll,132,KZ,DE,missing,1,1,0,0,0,0,0.86,0.4,Medium,Posted,train,True,record_mismatch
+TX-T02-021,train-02,2026-02-08,10:04,2654.63,2654.63,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,0.95,0.05,Low,Posted,train,False,
+TX-T02-022,train-02,2026-02-08,10:52,2844.27,2844.27,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,1.02,0.05,Low,Posted,train,False,
+TX-T02-023,train-02,2026-02-10,08:28,8177.86,8177.86,Payroll,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,1.82,0.0,Low,Posted,train,False,
+TX-T02-024,train-02,2026-02-10,09:27,681.39,681.39,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.51,0.0,Low,Posted,train,False,
+TX-T02-025,train-02,2026-02-11,16:56,816.16,576.47,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.81,0.0,Low,Posted,train,True,record_mismatch
+TX-T02-026,train-02,2026-02-11,19:01,410.6,410.6,Client Refund,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.17,0.0,Low,Posted,train,False,
+TX-T02-027,train-02,2026-02-12,13:01,9160.0,9160.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,missing,2,0,0,0,1,0,3.27,0.75,High,Under Review,train,True,structuring
+TX-T02-028,train-02,2026-02-12,14:28,109.23,109.23,Office Supplies,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,0,0,0.73,0.15,Low,Posted,train,False,
+TX-T02-029,train-02,2026-02-12,16:38,9980.0,9980.0,International Wire,ACC-1013,Operating,2292,KZ,US,available,3,1,0,0,1,0,1.66,0.45,Medium,Posted,train,True,structuring
+TX-T02-030,train-02,2026-02-12,18:07,9590.0,9590.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,3.42,0.6,High,Under Review,train,True,structuring
+TX-T02-031,train-02,2026-02-12,18:22,147.09,147.09,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,train,False,
+TX-T02-032,train-02,2026-02-12,19:44,9210.0,9210.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,3.29,0.5,High,Under Review,train,True,structuring
+TX-T02-033,train-02,2026-02-13,00:31,17737.22,17737.22,Payroll,ACC-1020,Treasury,45,TR,TR,available,2,0,1,0,0,1,3.94,0.55,High,Under Review,train,False,
+TX-T02-034,train-02,2026-02-13,14:31,4550.11,4550.11,International Wire,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.76,0.0,Low,Posted,train,False,
+TX-T02-035,train-02,2026-02-13,16:08,482.45,482.45,Software Subscription,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.54,0.0,Low,Posted,train,False,
+TX-T02-036,train-02,2026-02-13,22:13,531.7,531.7,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,2,0,1,0,0,1,1.18,0.25,Medium,Posted,train,False,
+TX-T02-037,train-02,2026-02-14,05:19,415.05,415.05,Travel & Expenses,ACC-1018,Payroll,15,AE,AE,available,1,0,1,0,0,1,0.92,0.2,Low,Posted,train,False,
+TX-T02-038,train-02,2026-02-14,19:37,680.43,680.43,Software Subscription,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.76,0.0,Low,Posted,train,False,
+TX-T02-039,train-02,2026-02-14,19:51,935.3,935.3,Utilities,ACC-1003,Vendor,1748,KZ,KZ,missing,1,0,0,0,0,0,1.56,0.25,Medium,Posted,train,False,
+TX-T02-040,train-02,2026-02-15,18:25,611.25,611.25,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.68,0.1,Low,Posted,train,False,
+TX-T03-001,train-03,2026-02-16,11:10,131.86,131.86,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,train,False,
+TX-T03-002,train-03,2026-02-16,11:18,1930.45,1930.45,Software Subscription,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,2.14,0.1,Low,Posted,train,False,
+TX-T03-003,train-03,2026-02-17,11:19,448.13,448.13,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.75,0.0,Low,Posted,train,False,
+TX-T03-004,train-03,2026-02-17,12:42,49125.29,49125.29,International Wire,ACC-1005,Operating,1496,KZ,KZ,missing,2,0,0,0,0,0,8.19,0.6,High,Under Review,train,True,large_amount
+TX-T03-005,train-03,2026-02-17,14:26,500.0,500.0,Utilities,ACC-1005,Operating,1496,KZ,KZ,missing,2,0,0,0,0,0,0.83,0.3,Medium,Posted,train,False,
+TX-T03-006,train-03,2026-02-17,18:23,4636.13,4636.13,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.66,0.0,Low,Posted,train,False,
+TX-T03-007,train-03,2026-02-18,11:16,2400.0,2400.0,Vendor Payment,ACC-1017,Operating,432,DE,DE,missing,1,0,0,1,0,0,0.86,0.35,Medium,Posted,train,False,
+TX-T03-008,train-03,2026-02-19,10:40,3408.88,3408.88,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.22,0.0,Low,Posted,train,False,
+TX-T03-009,train-03,2026-02-19,16:11,1321.62,1321.62,Software Subscription,ACC-1010,Payroll,834,KZ,KZ,missing,1,0,0,0,0,0,1.47,0.25,Medium,Posted,train,False,
+TX-T03-010,train-03,2026-02-19,18:07,100.0,100.0,Office Supplies,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,0.67,0.05,Low,Posted,train,False,
+TX-T03-011,train-03,2026-02-19,19:50,186.42,186.42,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,0.41,0.05,Low,Posted,train,False,
+TX-T03-012,train-03,2026-02-20,09:13,9440.0,9440.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.37,0.6,High,Under Review,train,True,structuring
+TX-T03-013,train-03,2026-02-20,11:09,9520.0,9520.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.59,0.3,Medium,Posted,train,True,structuring
+TX-T03-014,train-03,2026-02-20,15:48,9800.0,9800.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,1,1,0,3.5,0.7,High,Under Review,train,True,structuring
+TX-T03-015,train-03,2026-02-21,18:02,490.51,490.51,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.09,0.0,Low,Posted,train,False,
+TX-T03-016,train-03,2026-02-21,18:30,477.76,477.76,Travel & Expenses,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.06,0.0,Low,Posted,train,False,
+TX-T03-017,train-03,2026-02-22,08:06,9860.0,9860.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,3.52,0.5,High,Under Review,train,True,structuring
+TX-T03-018,train-03,2026-02-22,12:52,43842.81,43842.81,International Wire,ACC-1020,Treasury,45,TR,TR,missing,1,0,0,0,0,1,7.31,0.65,High,Under Review,train,True,large_amount
+TX-T03-019,train-03,2026-02-22,15:35,9740.0,9740.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,3.48,0.5,High,Under Review,train,True,structuring
+TX-T03-020,train-03,2026-02-22,17:54,124.06,124.06,Office Supplies,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.83,0.0,Low,Posted,train,False,
+TX-T03-021,train-03,2026-02-23,05:30,395.78,395.78,Travel & Expenses,ACC-1019,Vendor,30,GB,GB,available,1,0,1,0,0,1,0.88,0.2,Low,Posted,train,False,
+TX-T03-022,train-03,2026-02-23,08:54,774.74,774.74,Utilities,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.29,0.0,Low,Posted,train,False,
+TX-T03-023,train-03,2026-02-23,19:50,500.0,500.0,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.56,0.0,Low,Posted,train,False,
+TX-T03-024,train-03,2026-02-24,13:50,2112.29,2112.29,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.75,0.0,Low,Pending,train,False,
+TX-T03-025,train-03,2026-02-24,16:19,4011.16,4011.16,International Wire,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.67,0.0,Low,Posted,train,False,
+TX-T03-026,train-03,2026-02-25,09:08,3456.18,3456.18,Payroll,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Posted,train,False,
+TX-T03-027,train-03,2026-02-25,09:35,1053.01,1053.01,Software Subscription,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.17,0.0,Low,Posted,train,False,
+TX-T03-028,train-03,2026-02-25,12:56,402.72,402.72,Software Subscription,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.45,0.0,Low,Posted,train,False,
+TX-T03-029,train-03,2026-02-25,14:59,405.36,405.36,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.9,0.0,Low,Pending,train,False,
+TX-T03-030,train-03,2026-02-25,15:39,923.0,923.0,Software Subscription,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.03,0.0,Low,Posted,train,False,
+TX-T03-031,train-03,2026-02-26,08:51,3671.15,3671.15,International Wire,ACC-1013,Operating,2292,KZ,KZ,missing,2,0,0,0,0,0,0.61,0.3,Medium,Posted,train,False,
+TX-T03-032,train-03,2026-02-26,10:56,3216.09,3216.09,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,0,0,0.54,0.05,Low,Posted,train,False,
+TX-T03-033,train-03,2026-02-26,15:15,5411.19,5411.19,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.93,0.0,Low,Pending,train,False,
+TX-T03-034,train-03,2026-02-26,16:20,1120.9,1120.9,Vendor Payment,ACC-1010,Payroll,834,KZ,US,available,2,1,0,0,0,0,0.4,0.2,Low,Posted,train,False,
+TX-T03-035,train-03,2026-02-26,16:37,4074.7,4074.7,Vendor Payment,ACC-1010,Payroll,834,KZ,AE,available,2,1,0,0,0,0,1.46,0.2,Low,Posted,train,False,
+TX-T03-036,train-03,2026-02-26,16:38,200.0,200.0,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.44,0.0,Low,Posted,train,False,
+TX-T03-037,train-03,2026-02-27,10:37,12455.07,12455.07,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,4.45,0.3,Medium,Pending,train,False,
+TX-T03-038,train-03,2026-02-28,08:03,848.48,848.48,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.3,0.1,Low,Posted,train,False,
+TX-T03-039,train-03,2026-03-01,14:02,477.71,477.71,Travel & Expenses,ACC-1019,Vendor,30,GB,DE,available,1,1,0,0,0,1,1.06,0.25,Medium,Posted,train,False,
+TX-T03-040,train-03,2026-03-01,16:05,2407.8,2407.8,Vendor Payment,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.86,0.0,Low,Posted,train,False,
+TX-T04-001,train-04,2026-03-02,09:53,840.91,840.91,Utilities,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.4,0.1,Low,Posted,train,False,
+TX-T04-002,train-04,2026-03-03,03:51,9460.0,9460.0,International Wire,ACC-1009,Operating,252,KZ,KZ,missing,3,0,1,0,1,0,1.58,0.65,High,Under Review,train,True,structuring
+TX-T04-003,train-04,2026-03-03,11:06,7320.43,7320.43,International Wire,ACC-1016,Treasury,2074,US,KZ,available,1,1,0,0,0,0,1.22,0.15,Low,Pending,train,False,
+TX-T04-004,train-04,2026-03-03,11:12,9700.0,9700.0,International Wire,ACC-1009,Operating,252,KZ,KZ,missing,3,0,0,1,1,0,1.62,0.65,High,Under Review,train,True,structuring
+TX-T04-005,train-04,2026-03-03,11:34,708.46,708.46,Software Subscription,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.79,0.0,Low,Posted,train,False,
+TX-T04-006,train-04,2026-03-03,13:35,9520.0,9520.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.4,0.6,High,Under Review,train,True,structuring
+TX-T04-007,train-04,2026-03-03,19:26,1531.76,1531.76,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,missing,1,0,0,0,0,0,0.55,0.25,Medium,Posted,train,False,
+TX-T04-008,train-04,2026-03-03,19:57,5729.1,5729.1,International Wire,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.95,0.0,Low,Posted,train,False,
+TX-T04-009,train-04,2026-03-04,05:19,6199.22,6199.22,Payroll,ACC-1010,Payroll,834,KZ,KZ,available,1,0,1,0,0,0,1.38,0.1,Low,Posted,train,False,
+TX-T04-010,train-04,2026-03-04,09:56,691.88,691.88,Client Refund,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.98,0.0,Low,Posted,train,False,
+TX-T04-011,train-04,2026-03-04,15:48,4681.84,4681.84,Payroll,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.04,0.0,Low,Posted,train,False,
+TX-T04-012,train-04,2026-03-05,19:13,1555.13,1555.13,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.56,0.0,Low,Posted,train,False,
+TX-T04-013,train-04,2026-03-06,04:29,36834.59,36834.59,Payroll,ACC-1001,Operating,2368,KZ,KZ,available,1,0,1,0,0,0,8.19,0.4,Medium,Pending,train,True,large_amount
+TX-T04-014,train-04,2026-03-06,10:59,661.33,661.33,Software Subscription,ACC-1008,Treasury,655,KZ,KZ,available,2,0,0,0,0,0,0.73,0.05,Low,Posted,train,False,
+TX-T04-015,train-04,2026-03-06,13:54,1696.13,1696.13,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.61,0.0,Low,Posted,train,False,
+TX-T04-016,train-04,2026-03-06,14:04,400.0,400.0,Office Supplies,ACC-1008,Treasury,655,KZ,KZ,available,2,0,0,0,0,0,2.67,0.15,Low,Pending,train,False,
+TX-T04-017,train-04,2026-03-06,19:59,35540.46,35540.46,Payroll,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,7.9,0.3,Medium,Posted,train,True,large_amount
+TX-T04-018,train-04,2026-03-07,08:01,5804.72,5804.72,International Wire,ACC-1016,Treasury,2074,US,US,available,2,0,0,0,0,0,0.97,0.05,Low,Posted,train,False,
+TX-T04-019,train-04,2026-03-07,09:36,286.21,286.21,Travel & Expenses,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.64,0.0,Low,Posted,train,False,
+TX-T04-020,train-04,2026-03-07,10:46,252.35,252.35,Office Supplies,ACC-1016,Treasury,2074,US,US,missing,2,0,0,0,0,0,1.68,0.3,Medium,Posted,train,False,
+TX-T04-021,train-04,2026-03-08,12:21,3544.28,3544.28,International Wire,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.59,0.1,Low,Posted,train,False,
+TX-T04-022,train-04,2026-03-08,17:01,9785.01,9785.01,International Wire,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,1,0,1.63,0.15,Low,Pending,train,False,
+TX-T04-023,train-04,2026-03-08,17:51,359.21,359.21,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.8,0.0,Low,Posted,train,False,
+TX-T04-024,train-04,2026-03-09,08:54,599.08,599.08,Utilities,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.0,0.1,Low,Posted,train,False,
+TX-T04-025,train-04,2026-03-09,16:40,3673.66,3673.66,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.31,0.1,Low,Posted,train,False,
+TX-T04-026,train-04,2026-03-10,09:47,5064.06,3799.61,International Wire,ACC-1005,Operating,1496,KZ,KZ,missing,1,0,0,0,0,0,0.84,0.25,Medium,Pending,train,True,record_mismatch
+TX-T04-027,train-04,2026-03-10,16:01,413.64,256.83,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.92,0.0,Low,Posted,train,True,record_mismatch
+TX-T04-028,train-04,2026-03-11,14:28,635.7,635.7,Client Refund,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.82,0.0,Low,Posted,train,False,
+TX-T04-029,train-04,2026-03-11,17:21,478.87,478.87,Utilities,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.8,0.0,Low,Posted,train,False,
+TX-T04-030,train-04,2026-03-11,17:34,4860.72,4860.72,Payroll,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.08,0.0,Low,Posted,train,False,
+TX-T04-031,train-04,2026-03-12,13:30,3377.54,3377.54,Payroll,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.75,0.0,Low,Posted,train,False,
+TX-T04-032,train-04,2026-03-12,16:04,4074.34,4074.34,Payroll,ACC-1007,Vendor,2104,KZ,KZ,missing,1,0,0,0,0,0,0.91,0.25,Medium,Posted,train,False,
+TX-T04-033,train-04,2026-03-12,17:32,9950.0,9950.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,missing,2,0,0,0,1,0,3.55,0.75,High,Under Review,train,True,structuring
+TX-T04-034,train-04,2026-03-12,19:59,9760.0,9760.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,1.63,0.2,Low,Posted,train,True,structuring
+TX-T04-035,train-04,2026-03-13,08:33,508.73,508.73,Client Refund,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.45,0.0,Low,Posted,train,False,
+TX-T04-036,train-04,2026-03-13,08:34,100.0,100.0,Office Supplies,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.67,0.0,Low,Posted,train,False,
+TX-T04-037,train-04,2026-03-13,11:16,1074.05,1074.05,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,2.39,0.2,Low,Posted,train,False,
+TX-T04-038,train-04,2026-03-14,14:07,468.32,468.32,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.04,0.0,Low,Posted,train,False,
+TX-T04-039,train-04,2026-03-14,15:23,500.0,500.0,Travel & Expenses,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.11,0.1,Low,Posted,train,False,
+TX-T04-040,train-04,2026-03-15,11:22,6830.15,6830.15,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,2.44,0.1,Low,Posted,train,False,
+TX-T05-001,train-05,2026-03-16,14:43,5353.45,5353.45,International Wire,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.89,0.0,Low,Posted,train,False,
+TX-T05-002,train-05,2026-03-17,12:22,444.14,444.14,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.99,0.0,Low,Pending,train,False,
+TX-T05-003,train-05,2026-03-17,15:16,778.1,778.1,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.28,0.0,Low,Posted,train,False,
+TX-T05-004,train-05,2026-03-17,15:19,690.89,690.89,Utilities,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.15,0.1,Low,Pending,train,False,
+TX-T05-005,train-05,2026-03-18,08:31,237.21,237.21,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.53,0.0,Low,Pending,train,False,
+TX-T05-006,train-05,2026-03-18,11:31,60.82,60.82,Office Supplies,ACC-1005,Operating,1496,KZ,GB,available,3,1,0,0,0,0,0.41,0.3,Medium,Posted,train,False,
+TX-T05-007,train-05,2026-03-18,16:07,349.66,349.66,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,3,0,0,0,0,0,2.33,0.25,Medium,Posted,train,False,
+TX-T05-008,train-05,2026-03-18,17:24,572.48,572.48,Travel & Expenses,ACC-1005,Operating,1496,KZ,KZ,available,3,0,0,0,0,0,1.27,0.15,Low,Posted,train,False,
+TX-T05-009,train-05,2026-03-19,16:34,1457.24,1457.24,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.52,0.0,Low,Posted,train,False,
+TX-T05-010,train-05,2026-03-20,11:22,3493.99,3493.99,Payroll,ACC-1020,Treasury,45,TR,TR,available,2,0,0,0,0,1,0.78,0.15,Low,Posted,train,False,
+TX-T05-011,train-05,2026-03-20,11:47,301.73,301.73,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,2,0,0,0,0,0,0.67,0.05,Low,Posted,train,False,
+TX-T05-012,train-05,2026-03-20,16:00,1594.21,1594.21,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.57,0.0,Low,Posted,train,False,
+TX-T05-013,train-05,2026-03-20,16:35,441.44,441.44,Utilities,ACC-1015,Vendor,1309,KZ,KZ,available,2,0,0,0,0,0,0.74,0.05,Low,Posted,train,False,
+TX-T05-014,train-05,2026-03-20,18:19,2839.53,2839.53,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.01,0.0,Low,Pending,train,False,
+TX-T05-015,train-05,2026-03-20,19:31,700.0,700.0,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,2,0,0,0,0,1,0.78,0.15,Low,Pending,train,False,
+TX-T05-016,train-05,2026-03-21,03:08,2399.44,2399.44,Software Subscription,ACC-1020,Treasury,45,TR,GB,available,1,1,1,0,0,1,2.67,0.45,Medium,Posted,train,True,foreign_offhours
+TX-T05-017,train-05,2026-03-21,11:19,3338.78,3338.78,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.74,0.1,Low,Posted,train,False,
+TX-T05-018,train-05,2026-03-21,16:12,1867.55,1867.55,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,4.15,0.3,Medium,Posted,train,False,
+TX-T05-019,train-05,2026-03-22,09:15,212.51,212.51,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.47,0.1,Low,Posted,train,False,
+TX-T05-020,train-05,2026-03-22,12:39,18228.43,18228.43,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,4.05,0.4,Medium,Pending,train,False,
+TX-T05-021,train-05,2026-03-22,13:37,647.29,647.29,Utilities,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.08,0.0,Low,Posted,train,False,
+TX-T05-022,train-05,2026-03-23,09:39,3700.0,3700.0,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,1,0,0,1.32,0.1,Low,Posted,train,False,
+TX-T05-023,train-05,2026-03-23,18:25,9130.0,9130.0,International Wire,ACC-1009,Operating,252,KZ,KZ,missing,3,0,0,0,1,0,1.52,0.55,High,Under Review,train,True,structuring
+TX-T05-024,train-05,2026-03-23,18:49,9480.0,9480.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,missing,3,0,0,0,1,0,3.39,0.85,High,Under Review,train,True,structuring
+TX-T05-025,train-05,2026-03-23,19:11,9350.0,9350.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.34,0.6,High,Under Review,train,True,structuring
+TX-T05-026,train-05,2026-03-24,04:33,12164.02,12164.02,Vendor Payment,ACC-1018,Payroll,15,AE,GB,available,1,1,1,0,0,1,4.34,0.65,High,Under Review,train,True,foreign_offhours
+TX-T05-027,train-05,2026-03-24,19:39,336.41,336.41,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,2,0,0,0,0,0,0.75,0.05,Low,Posted,train,False,
+TX-T05-028,train-05,2026-03-24,23:05,2346.27,2346.27,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,missing,2,0,1,0,0,0,0.84,0.4,Medium,Posted,train,True,missing_document
+TX-T05-029,train-05,2026-03-25,10:03,885.2,885.2,Software Subscription,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,train,False,
+TX-T05-030,train-05,2026-03-26,16:22,1379.19,1379.19,Software Subscription,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.53,0.0,Low,Posted,train,False,
+TX-T05-031,train-05,2026-03-26,19:25,365.71,365.71,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,missing,1,0,0,0,0,0,0.81,0.25,Medium,Posted,train,True,missing_document
+TX-T05-032,train-05,2026-03-27,19:54,714.73,714.73,Utilities,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.19,0.1,Low,Posted,train,False,
+TX-T05-033,train-05,2026-03-27,22:11,10074.22,10074.22,Vendor Payment,ACC-1020,Treasury,45,TR,DE,available,1,1,1,0,0,1,3.6,0.65,High,Under Review,train,True,foreign_offhours
+TX-T05-034,train-05,2026-03-28,05:32,4711.32,4711.32,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,1,0,0,0,1.05,0.1,Low,Posted,train,False,
+TX-T05-035,train-05,2026-03-28,17:41,354.14,354.14,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.79,0.0,Low,Posted,train,False,
+TX-T05-036,train-05,2026-03-29,09:14,959.93,959.93,Travel & Expenses,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,2.13,0.1,Low,Posted,train,False,
+TX-T05-037,train-05,2026-03-29,14:55,475.02,475.02,Client Refund,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.36,0.0,Low,Posted,train,False,
+TX-T05-038,train-05,2026-03-29,17:09,207.23,207.23,Client Refund,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.59,0.0,Low,Posted,train,False,
+TX-T05-039,train-05,2026-03-29,18:39,2300.0,2300.0,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,1,0,0,0.82,0.1,Low,Posted,train,False,
+TX-T05-040,train-05,2026-03-29,19:43,288.58,288.58,Client Refund,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,train,False,
+TX-T06-001,train-06,2026-03-30,00:25,5919.55,5919.55,International Wire,ACC-1020,Treasury,45,TR,TR,available,1,0,1,0,0,1,0.99,0.2,Low,Posted,train,False,
+TX-T06-002,train-06,2026-03-30,00:26,2040.91,1344.87,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,1,0,0,0,0.73,0.1,Low,Posted,train,True,record_mismatch
+TX-T06-003,train-06,2026-03-30,13:39,3645.76,3645.76,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.3,0.0,Low,Posted,train,False,
+TX-T06-004,train-06,2026-03-30,18:26,570.04,570.04,Software Subscription,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.63,0.0,Low,Posted,train,False,
+TX-T06-005,train-06,2026-03-30,18:37,392.09,392.09,Client Refund,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.12,0.0,Low,Posted,train,False,
+TX-T06-006,train-06,2026-03-31,10:13,100.0,100.0,Client Refund,ACC-1010,Payroll,834,KZ,KZ,missing,1,0,0,0,0,0,0.29,0.25,Medium,Posted,train,False,
+TX-T06-007,train-06,2026-03-31,12:11,1600.0,1600.0,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,1,0,0,0.57,0.1,Low,Posted,train,False,
+TX-T06-008,train-06,2026-03-31,15:59,3700.0,3700.0,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,1,0,0,0.82,0.1,Low,Posted,train,False,
+TX-T06-009,train-06,2026-04-01,05:58,773.93,773.93,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,1,0,0,0,0.86,0.1,Low,Pending,train,False,
+TX-T06-010,train-06,2026-04-01,08:09,754.48,754.48,Office Supplies,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,5.03,0.55,High,Under Review,train,True,large_amount
+TX-T06-011,train-06,2026-04-01,10:26,2164.51,2164.51,Travel & Expenses,ACC-1014,Payroll,132,KZ,GB,available,1,1,0,0,0,0,4.81,0.45,Medium,Posted,train,False,
+TX-T06-012,train-06,2026-04-01,16:21,137.23,137.23,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.91,0.0,Low,Posted,train,False,
+TX-T06-013,train-06,2026-04-02,09:05,704.6,704.6,Client Refund,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,2.01,0.1,Low,Posted,train,False,
+TX-T06-014,train-06,2026-04-02,19:10,4014.62,4014.62,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.43,0.0,Low,Posted,train,False,
+TX-T06-015,train-06,2026-04-03,08:17,9700.0,9700.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,missing,2,0,0,1,1,0,3.46,0.85,High,Under Review,train,True,structuring
+TX-T06-016,train-06,2026-04-03,09:38,239.78,239.78,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.6,0.0,Low,Posted,train,False,
+TX-T06-017,train-06,2026-04-03,18:03,1070.71,1070.71,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,2.38,0.1,Low,Posted,train,False,
+TX-T06-018,train-06,2026-04-03,18:43,3578.33,3578.33,International Wire,ACC-1019,Vendor,30,GB,GB,missing,1,0,0,0,0,1,0.6,0.35,Medium,Posted,train,False,
+TX-T06-019,train-06,2026-04-03,19:59,9140.0,9140.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,1,0,3.26,0.5,High,Under Review,train,True,structuring
+TX-T06-020,train-06,2026-04-04,04:26,276.68,276.68,Travel & Expenses,ACC-1013,Operating,2292,KZ,KZ,available,1,0,1,0,0,0,0.61,0.1,Low,Posted,train,False,
+TX-T06-021,train-06,2026-04-04,12:49,65.53,65.53,Office Supplies,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.44,0.0,Low,Posted,train,False,
+TX-T06-022,train-06,2026-04-04,15:25,144.73,144.73,Travel & Expenses,ACC-1015,Vendor,1309,KZ,GB,available,1,1,0,0,0,0,0.32,0.15,Low,Pending,train,False,
+TX-T06-023,train-06,2026-04-05,18:15,4152.05,4152.05,International Wire,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.69,0.0,Low,Posted,train,False,
+TX-T06-024,train-06,2026-04-06,08:11,497.11,497.11,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.1,0.0,Low,Posted,train,False,
+TX-T06-025,train-06,2026-04-06,17:05,8242.52,9972.19,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,2.94,0.1,Low,Posted,train,True,record_mismatch
+TX-T06-026,train-06,2026-04-07,08:33,2697.42,2697.42,Travel & Expenses,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,5.99,0.3,Medium,Posted,train,True,large_amount
+TX-T06-027,train-06,2026-04-07,08:41,445.71,445.71,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.99,0.0,Low,Posted,train,False,
+TX-T06-028,train-06,2026-04-07,11:10,1048.2,1048.2,Utilities,ACC-1010,Payroll,834,KZ,KZ,available,2,0,0,0,0,0,1.75,0.05,Low,Posted,train,False,
+TX-T06-029,train-06,2026-04-07,11:42,1329.18,1329.18,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,2,0,0,0,0,0,0.47,0.05,Low,Posted,train,False,
+TX-T06-030,train-06,2026-04-07,15:22,8900.0,8900.0,Vendor Payment,ACC-1007,Vendor,2104,KZ,US,available,1,1,0,1,0,0,3.18,0.55,High,Under Review,train,False,
+TX-T06-031,train-06,2026-04-08,04:37,2114.33,2114.33,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,1,0,0,1,0.76,0.2,Low,Posted,train,False,
+TX-T06-032,train-06,2026-04-09,22:02,976.93,976.93,Travel & Expenses,ACC-1018,Payroll,15,AE,KZ,missing,1,1,1,0,0,1,2.17,0.7,High,Under Review,train,True,foreign_offhours
+TX-T06-033,train-06,2026-04-09,22:03,691.83,691.83,Software Subscription,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,1,0,0,0,0.77,0.1,Low,Posted,train,False,
+TX-T06-034,train-06,2026-04-10,02:16,2268.24,2268.24,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,missing,1,0,1,0,0,0,5.04,0.65,High,Under Review,train,True,large_amount
+TX-T06-035,train-06,2026-04-10,05:16,1651.98,1651.98,Vendor Payment,ACC-1008,Treasury,655,KZ,KZ,available,1,0,1,0,0,0,0.59,0.1,Low,Posted,train,False,
+TX-T06-036,train-06,2026-04-10,09:18,132.38,132.38,Office Supplies,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,train,False,
+TX-T06-037,train-06,2026-04-10,10:44,3959.71,3959.71,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.88,0.1,Low,Posted,train,False,
+TX-T06-038,train-06,2026-04-11,09:09,187.53,187.53,Client Refund,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.54,0.0,Low,Posted,train,False,
+TX-T06-039,train-06,2026-04-11,13:04,1774.32,1774.32,Vendor Payment,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.63,0.1,Low,Posted,train,False,
+TX-T06-040,train-06,2026-04-11,16:25,5400.0,5400.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,1,0,0,0.9,0.1,Low,Pending,train,False,
+TX-T07-001,train-07,2026-04-13,09:30,502.99,502.99,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,2,0,0,0,0,0,1.12,0.05,Low,Posted,train,False,
+TX-T07-002,train-07,2026-04-13,11:59,205.92,205.92,Office Supplies,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.37,0.0,Low,Posted,train,False,
+TX-T07-003,train-07,2026-04-13,17:35,597.91,597.91,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,2,0,0,0,0,0,1.33,0.05,Low,Posted,train,False,
+TX-T07-004,train-07,2026-04-14,05:50,304.16,304.16,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,1,0,0,0,0.68,0.1,Low,Pending,train,False,
+TX-T07-005,train-07,2026-04-15,08:35,5345.41,5345.41,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.19,0.0,Low,Posted,train,False,
+TX-T07-006,train-07,2026-04-15,12:03,558.37,558.37,Utilities,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.93,0.0,Low,Posted,train,False,
+TX-T07-007,train-07,2026-04-15,15:52,386.18,386.18,Client Refund,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.1,0.0,Low,Pending,train,False,
+TX-T07-008,train-07,2026-04-16,11:03,5597.71,5597.71,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.24,0.0,Low,Posted,train,False,
+TX-T07-009,train-07,2026-04-16,14:36,120.61,120.61,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.8,0.0,Low,Pending,train,False,
+TX-T07-010,train-07,2026-04-17,04:40,485.12,485.12,Travel & Expenses,ACC-1010,Payroll,834,KZ,KZ,available,1,0,1,0,0,0,1.08,0.1,Low,Posted,train,False,
+TX-T07-011,train-07,2026-04-17,16:49,867.22,867.22,Utilities,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.45,0.0,Low,Posted,train,False,
+TX-T07-012,train-07,2026-04-18,05:48,852.57,852.57,Office Supplies,ACC-1019,Vendor,30,GB,KZ,missing,1,1,1,0,0,1,5.68,0.9,High,Under Review,train,True,foreign_offhours
+TX-T07-013,train-07,2026-04-18,16:09,329.86,329.86,Client Refund,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.94,0.0,Low,Posted,train,False,
+TX-T07-014,train-07,2026-04-18,16:19,644.21,644.21,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.43,0.1,Low,Pending,train,False,
+TX-T07-015,train-07,2026-04-19,13:15,1934.23,1934.23,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.69,0.0,Low,Posted,train,False,
+TX-T07-016,train-07,2026-04-20,02:08,511.68,511.68,Utilities,ACC-1020,Treasury,45,TR,TR,available,1,0,1,0,0,1,0.85,0.2,Low,Pending,train,False,
+TX-T07-017,train-07,2026-04-20,08:50,481.79,481.79,Travel & Expenses,ACC-1016,Treasury,2074,US,DE,available,1,1,0,0,0,0,1.07,0.15,Low,Posted,train,False,
+TX-T07-018,train-07,2026-04-21,15:01,12467.11,16797.39,International Wire,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,2.08,0.1,Low,Posted,train,True,record_mismatch
+TX-T07-019,train-07,2026-04-21,19:25,1325.62,1325.62,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.47,0.0,Low,Pending,train,False,
+TX-T07-020,train-07,2026-04-22,10:08,3862.25,3862.25,Vendor Payment,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.38,0.0,Low,Posted,train,False,
+TX-T07-021,train-07,2026-04-22,12:00,300.0,300.0,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,0,0,0.5,0.05,Low,Pending,train,False,
+TX-T07-022,train-07,2026-04-22,13:08,604.03,604.03,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.34,0.0,Low,Posted,train,False,
+TX-T07-023,train-07,2026-04-22,16:15,221.12,221.12,Office Supplies,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.47,0.0,Low,Posted,train,False,
+TX-T07-024,train-07,2026-04-22,16:21,547.28,547.28,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,0,0,0.91,0.05,Low,Pending,train,False,
+TX-T07-025,train-07,2026-04-22,17:29,257.65,257.65,Client Refund,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.74,0.0,Low,Pending,train,False,
+TX-T07-026,train-07,2026-04-22,19:02,4565.9,4565.9,International Wire,ACC-1019,Vendor,30,GB,GB,missing,1,0,0,0,0,1,0.76,0.35,Medium,Posted,train,True,missing_document
+TX-T07-027,train-07,2026-04-23,12:45,4338.43,4338.43,Payroll,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,0.96,0.05,Low,Posted,train,False,
+TX-T07-028,train-07,2026-04-23,16:46,7051.35,7051.35,International Wire,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,1.18,0.05,Low,Posted,train,False,
+TX-T07-029,train-07,2026-04-23,17:27,128.29,128.29,Office Supplies,ACC-1015,Vendor,1309,KZ,KZ,missing,1,0,0,0,0,0,0.86,0.25,Medium,Posted,train,False,
+TX-T07-030,train-07,2026-04-24,03:56,704.37,704.37,Software Subscription,ACC-1001,Operating,2368,KZ,KZ,available,1,0,1,0,0,0,0.78,0.1,Low,Posted,train,False,
+TX-T07-031,train-07,2026-04-24,13:13,1096.1,1096.1,Vendor Payment,ACC-1017,Operating,432,DE,DE,missing,1,0,0,0,0,0,0.39,0.25,Medium,Posted,train,False,
+TX-T07-032,train-07,2026-04-25,09:01,9660.0,9660.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,missing,4,0,0,0,1,0,3.45,0.85,High,Under Review,train,True,structuring
+TX-T07-033,train-07,2026-04-25,10:10,9840.0,9840.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,4,0,0,0,1,0,3.51,0.6,High,Under Review,train,True,structuring
+TX-T07-034,train-07,2026-04-25,18:23,5496.87,5496.87,Payroll,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.22,0.0,Low,Pending,train,False,
+TX-T07-035,train-07,2026-04-25,19:07,913.61,913.61,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,4,0,0,0,0,0,1.52,0.15,Low,Posted,train,False,
+TX-T07-036,train-07,2026-04-25,19:50,744.42,744.42,Travel & Expenses,ACC-1013,Operating,2292,KZ,KZ,missing,4,0,0,0,0,0,1.65,0.4,Medium,Pending,train,False,
+TX-T07-037,train-07,2026-04-26,08:13,4392.09,4392.09,International Wire,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.73,0.0,Low,Posted,train,False,
+TX-T07-038,train-07,2026-04-26,09:34,218.41,218.41,Client Refund,ACC-1009,Operating,252,KZ,KZ,missing,1,0,0,0,0,0,0.62,0.25,Medium,Posted,train,True,missing_document
+TX-T07-039,train-07,2026-04-26,10:05,596.74,596.74,Office Supplies,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,3.98,0.3,Medium,Posted,train,False,
+TX-T07-040,train-07,2026-04-26,18:01,577.31,577.31,Utilities,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.96,0.0,Low,Posted,train,False,
+TX-T08-001,train-08,2026-04-27,03:41,500.0,500.0,Software Subscription,ACC-1016,Treasury,2074,US,US,available,1,0,1,0,0,0,0.56,0.1,Low,Posted,train,False,
+TX-T08-002,train-08,2026-04-27,10:02,1400.0,1400.0,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,1,0,0,0.5,0.1,Low,Posted,train,False,
+TX-T08-003,train-08,2026-04-27,15:49,271.85,271.85,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.6,0.0,Low,Pending,train,False,
+TX-T08-004,train-08,2026-04-27,15:53,5303.65,5303.65,Utilities,ACC-1015,Vendor,1309,KZ,KZ,missing,2,0,0,0,0,0,8.84,0.6,High,Under Review,train,True,large_amount
+TX-T08-005,train-08,2026-04-27,18:24,426.46,426.46,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,2,0,0,0,0,0,0.95,0.05,Low,Posted,train,False,
+TX-T08-006,train-08,2026-04-28,04:49,289.76,289.76,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,1,0,0,0,1.93,0.1,Low,Posted,train,False,
+TX-T08-007,train-08,2026-04-28,16:11,371.13,371.13,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,train,False,
+TX-T08-008,train-08,2026-04-29,13:50,510.73,510.73,Office Supplies,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,3.4,0.3,Medium,Posted,train,False,
+TX-T08-009,train-08,2026-04-29,13:51,39769.19,39769.19,Payroll,ACC-1008,Treasury,655,KZ,KZ,missing,2,0,0,0,0,0,8.84,0.6,High,Under Review,train,True,large_amount
+TX-T08-010,train-08,2026-04-29,14:00,477.67,477.67,Utilities,ACC-1008,Treasury,655,KZ,KZ,available,2,0,0,0,0,0,0.8,0.05,Low,Posted,train,False,
+TX-T08-011,train-08,2026-04-30,04:48,27652.05,27652.05,Vendor Payment,ACC-1020,Treasury,45,TR,KZ,available,1,1,1,0,0,1,9.88,0.65,High,Under Review,train,True,foreign_offhours
+TX-T08-012,train-08,2026-04-30,08:51,2935.01,2935.01,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.05,0.0,Low,Posted,train,False,
+TX-T08-013,train-08,2026-04-30,10:03,1901.45,1901.45,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,4.23,0.55,High,Under Review,train,True,large_amount
+TX-T08-014,train-08,2026-04-30,10:49,567.75,567.75,Utilities,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.95,0.0,Low,Posted,train,False,
+TX-T08-015,train-08,2026-04-30,11:41,3101.71,3101.71,Client Refund,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,8.86,0.3,Medium,Pending,train,False,
+TX-T08-016,train-08,2026-05-01,14:25,373.22,373.22,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,missing,1,0,0,0,0,1,0.83,0.35,Medium,Pending,train,False,
+TX-T08-017,train-08,2026-05-01,17:22,1505.46,1505.46,Software Subscription,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.67,0.0,Low,Posted,train,False,
+TX-T08-018,train-08,2026-05-03,02:20,633.25,633.25,Client Refund,ACC-1020,Treasury,45,TR,AE,missing,1,1,1,0,0,1,1.81,0.6,High,Under Review,train,True,foreign_offhours
+TX-T08-019,train-08,2026-05-03,10:55,5000.0,5000.0,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,1,0,0,1.79,0.1,Low,Posted,train,False,
+TX-T08-020,train-08,2026-05-04,08:26,6557.24,6557.24,International Wire,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.09,0.1,Low,Posted,train,False,
+TX-T08-021,train-08,2026-05-04,08:27,528.94,528.94,Office Supplies,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,3.53,0.4,Medium,Posted,train,False,
+TX-T08-022,train-08,2026-05-04,18:23,4303.97,4303.97,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.54,0.0,Low,Posted,train,False,
+TX-T08-023,train-08,2026-05-04,18:40,6800.0,6800.0,Payroll,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,1,0,0,1.51,0.1,Low,Pending,train,False,
+TX-T08-024,train-08,2026-05-05,18:22,870.79,870.79,Client Refund,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,2.49,0.1,Low,Posted,train,False,
+TX-T08-025,train-08,2026-05-06,12:45,100.11,100.11,Client Refund,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.29,0.0,Low,Pending,train,False,
+TX-T08-026,train-08,2026-05-06,13:42,1273.62,1273.62,Software Subscription,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.42,0.1,Low,Posted,train,False,
+TX-T08-027,train-08,2026-05-06,14:10,384.49,384.49,Utilities,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.64,0.1,Low,Posted,train,False,
+TX-T08-028,train-08,2026-05-06,17:14,3181.99,3181.99,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.71,0.0,Low,Pending,train,False,
+TX-T08-029,train-08,2026-05-07,02:26,220.93,220.93,Client Refund,ACC-1001,Operating,2368,KZ,KZ,available,2,0,1,0,0,0,0.63,0.15,Low,Posted,train,False,
+TX-T08-030,train-08,2026-05-07,09:19,1723.68,1723.68,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,available,2,0,0,0,0,0,0.62,0.05,Low,Posted,train,False,
+TX-T08-031,train-08,2026-05-07,19:57,47.46,47.46,Office Supplies,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.32,0.0,Low,Posted,train,False,
+TX-T08-032,train-08,2026-05-08,02:46,717.77,717.77,Travel & Expenses,ACC-1016,Treasury,2074,US,US,available,1,0,1,0,0,0,1.6,0.1,Low,Pending,train,False,
+TX-T08-033,train-08,2026-05-08,12:02,9410.0,9410.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,missing,3,0,0,0,1,0,1.57,0.55,High,Under Review,train,True,structuring
+TX-T08-034,train-08,2026-05-08,14:15,9460.0,9460.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,3,0,0,0,1,0,3.38,0.6,High,Under Review,train,True,structuring
+TX-T08-035,train-08,2026-05-08,15:42,3431.21,3431.21,Payroll,ACC-1004,Treasury,2255,KZ,KZ,available,3,0,0,0,0,0,0.76,0.15,Low,Posted,train,False,
+TX-T08-036,train-08,2026-05-09,08:06,4803.22,4803.22,International Wire,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.8,0.0,Low,Posted,train,False,
+TX-T08-037,train-08,2026-05-09,08:17,3200.0,3200.0,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,1,0,0,1.14,0.1,Low,Pending,train,False,
+TX-T08-038,train-08,2026-05-09,10:17,296.73,296.73,Office Supplies,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.98,0.1,Low,Posted,train,False,
+TX-T08-039,train-08,2026-05-09,12:22,5951.88,5951.88,Vendor Payment,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,2.13,0.1,Low,Posted,train,False,
+TX-T08-040,train-08,2026-05-09,13:12,3508.71,3508.71,Vendor Payment,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.25,0.1,Low,Posted,train,False,
+TX-T09-001,train-09,2026-05-11,09:08,5500.0,5500.0,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,1,0,0,1.96,0.1,Low,Posted,train,False,
+TX-T09-002,train-09,2026-05-11,10:07,9640.0,9640.0,International Wire,ACC-1004,Treasury,2255,KZ,AE,missing,2,1,0,0,1,0,1.61,0.6,High,Under Review,train,True,structuring
+TX-T09-003,train-09,2026-05-11,14:39,472.52,472.52,Travel & Expenses,ACC-1015,Vendor,1309,KZ,TR,available,1,1,0,0,0,0,1.05,0.15,Low,Posted,train,False,
+TX-T09-004,train-09,2026-05-11,15:56,9930.0,9930.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,missing,2,0,0,0,1,0,1.66,0.45,Medium,Posted,train,True,structuring
+TX-T09-005,train-09,2026-05-11,15:58,580.68,580.68,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.29,0.0,Low,Posted,train,False,
+TX-T09-006,train-09,2026-05-12,03:26,238.78,238.78,Office Supplies,ACC-1009,Operating,252,KZ,KZ,available,1,0,1,0,0,0,1.59,0.1,Low,Posted,train,False,
+TX-T09-007,train-09,2026-05-12,10:26,2896.37,2896.37,International Wire,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.48,0.0,Low,Posted,train,False,
+TX-T09-008,train-09,2026-05-12,18:00,476.99,476.99,Travel & Expenses,ACC-1014,Payroll,132,KZ,DE,available,1,1,0,0,0,0,1.06,0.15,Low,Posted,train,False,
+TX-T09-009,train-09,2026-05-13,05:45,6238.89,6238.89,Vendor Payment,ACC-1016,Treasury,2074,US,US,available,1,0,1,0,0,0,2.23,0.2,Low,Posted,train,False,
+TX-T09-010,train-09,2026-05-13,15:54,534.95,534.95,Utilities,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.89,0.0,Low,Posted,train,False,
+TX-T09-011,train-09,2026-05-13,17:57,4033.02,4033.02,Vendor Payment,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.44,0.0,Low,Posted,train,False,
+TX-T09-012,train-09,2026-05-13,19:51,5442.53,5442.53,International Wire,ACC-1008,Treasury,655,KZ,KZ,missing,1,0,0,0,0,0,0.91,0.25,Medium,Posted,train,True,missing_document
+TX-T09-013,train-09,2026-05-15,02:55,1513.89,1513.89,Client Refund,ACC-1019,Vendor,30,GB,AE,available,1,1,1,0,0,1,4.33,0.65,High,Under Review,train,True,foreign_offhours
+TX-T09-014,train-09,2026-05-15,14:38,85.07,85.07,Office Supplies,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.57,0.0,Low,Posted,train,False,
+TX-T09-015,train-09,2026-05-15,19:57,8757.79,8757.79,International Wire,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.46,0.0,Low,Posted,train,False,
+TX-T09-016,train-09,2026-05-16,14:41,1157.03,1157.03,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.93,0.0,Low,Pending,train,False,
+TX-T09-017,train-09,2026-05-16,16:32,1155.29,1155.29,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,3.3,0.3,Medium,Posted,train,False,
+TX-T09-018,train-09,2026-05-16,19:01,4186.21,4186.21,Payroll,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.93,0.0,Low,Posted,train,False,
+TX-T09-019,train-09,2026-05-18,08:00,9470.0,9470.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,missing,3,0,0,0,1,0,3.38,0.85,High,Under Review,train,True,structuring
+TX-T09-020,train-09,2026-05-18,08:31,9310.0,9310.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,1.55,0.3,Medium,Posted,train,True,structuring
+TX-T09-021,train-09,2026-05-18,08:59,6900.0,6900.0,Payroll,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,1,0,0,1.53,0.1,Low,Posted,train,False,
+TX-T09-022,train-09,2026-05-18,10:06,200.0,200.0,Office Supplies,ACC-1012,Treasury,2199,KZ,KZ,available,2,0,0,0,0,0,1.33,0.05,Low,Pending,train,False,
+TX-T09-023,train-09,2026-05-18,11:49,2994.5,2994.5,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,2,0,0,0,0,0,1.07,0.05,Low,Posted,train,False,
+TX-T09-024,train-09,2026-05-18,12:35,17354.82,17354.82,International Wire,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,2.89,0.1,Low,Posted,train,False,
+TX-T09-025,train-09,2026-05-18,19:16,9310.0,9310.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,3.33,0.6,High,Under Review,train,True,structuring
+TX-T09-026,train-09,2026-05-18,19:42,5534.81,5534.81,Payroll,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.23,0.0,Low,Posted,train,False,
+TX-T09-027,train-09,2026-05-18,19:52,3313.59,3313.59,Vendor Payment,ACC-1015,Vendor,1309,KZ,KZ,missing,1,0,0,0,0,0,1.18,0.25,Medium,Posted,train,False,
+TX-T09-028,train-09,2026-05-19,01:56,5336.8,5336.8,Vendor Payment,ACC-1018,Payroll,15,AE,US,available,1,1,1,0,0,1,1.91,0.35,Medium,Posted,train,True,foreign_offhours
+TX-T09-029,train-09,2026-05-19,19:45,771.79,771.79,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.72,0.0,Low,Posted,train,False,
+TX-T09-030,train-09,2026-05-20,15:57,23190.64,23190.64,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,8.28,0.3,Medium,Posted,train,True,large_amount
+TX-T09-031,train-09,2026-05-21,03:08,4100.0,4100.0,International Wire,ACC-1008,Treasury,655,KZ,KZ,available,1,0,1,1,0,0,0.68,0.2,Low,Posted,train,False,
+TX-T09-032,train-09,2026-05-21,11:17,2288.29,2288.29,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,train,False,
+TX-T09-033,train-09,2026-05-21,11:50,555.63,555.63,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.62,0.1,Low,Posted,train,False,
+TX-T09-034,train-09,2026-05-22,16:59,2000.0,2000.0,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,1,0,0,0.71,0.1,Low,Posted,train,False,
+TX-T09-035,train-09,2026-05-23,01:58,2558.28,2558.28,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,1,0,0,1,0.91,0.2,Low,Posted,train,False,
+TX-T09-036,train-09,2026-05-23,09:58,739.23,739.23,Software Subscription,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,train,False,
+TX-T09-037,train-09,2026-05-24,08:28,800.0,800.0,Software Subscription,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.89,0.0,Low,Posted,train,False,
+TX-T09-038,train-09,2026-05-24,09:01,193.06,193.06,Office Supplies,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.29,0.0,Low,Pending,train,False,
+TX-T09-039,train-09,2026-05-24,09:52,266.68,266.68,Travel & Expenses,ACC-1006,Payroll,1966,KZ,US,available,1,1,0,0,0,0,0.59,0.15,Low,Posted,train,False,
+TX-T09-040,train-09,2026-05-24,10:20,212.62,212.62,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.47,0.0,Low,Posted,train,False,
+TX-D00-001,dev-00,2026-07-06,04:01,1948.57,1948.57,Vendor Payment,ACC-1018,Payroll,15,AE,AE,missing,1,0,1,0,0,1,0.7,0.45,Medium,Posted,dev,False,
+TX-D00-002,dev-00,2026-07-06,16:30,345.81,345.81,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Posted,dev,False,
+TX-D00-003,dev-00,2026-07-06,16:49,799.5,799.5,Software Subscription,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.89,0.0,Low,Posted,dev,False,
+TX-D00-004,dev-00,2026-07-08,19:57,4700.0,4700.0,International Wire,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,1,0,0,0.78,0.1,Low,Posted,dev,False,
+TX-D00-005,dev-00,2026-07-09,01:02,224.09,224.09,Office Supplies,ACC-1019,Vendor,30,GB,KZ,available,1,1,1,0,0,1,1.49,0.35,Medium,Posted,dev,True,foreign_offhours
+TX-D00-006,dev-00,2026-07-09,02:47,9390.0,9390.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,2,0,1,0,1,0,1.56,0.3,Medium,Pending,dev,True,structuring
+TX-D00-007,dev-00,2026-07-09,10:01,5665.77,5665.77,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.26,0.0,Low,Posted,dev,False,
+TX-D00-008,dev-00,2026-07-09,13:11,2008.36,2008.36,Vendor Payment,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.72,0.0,Low,Posted,dev,False,
+TX-D00-009,dev-00,2026-07-09,14:11,1284.46,1284.46,Software Subscription,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.43,0.0,Low,Posted,dev,False,
+TX-D00-010,dev-00,2026-07-09,17:36,9540.0,9540.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,missing,2,0,0,0,1,0,1.59,0.45,Medium,Posted,dev,True,structuring
+TX-D00-011,dev-00,2026-07-10,00:53,1730.85,2072.58,Vendor Payment,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,1,0,0,0,0.62,0.1,Low,Posted,dev,True,record_mismatch
+TX-D00-012,dev-00,2026-07-10,12:32,5248.43,5248.43,Payroll,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,1.17,0.0,Low,Posted,dev,False,
+TX-D00-013,dev-00,2026-07-10,15:49,3698.29,3698.29,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.32,0.0,Low,Posted,dev,False,
+TX-D00-014,dev-00,2026-07-11,18:34,245.23,245.23,Office Supplies,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.63,0.0,Low,Posted,dev,False,
+TX-D00-015,dev-00,2026-07-12,15:04,6403.72,6403.72,Payroll,ACC-1012,Treasury,2199,KZ,KZ,missing,1,0,0,0,0,0,1.42,0.25,Medium,Pending,dev,True,missing_document
+TX-D00-016,dev-00,2026-07-13,08:47,5991.16,5991.16,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,2.14,0.1,Low,Pending,dev,False,
+TX-D00-017,dev-00,2026-07-13,09:31,59.47,59.47,Office Supplies,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.4,0.1,Low,Pending,dev,False,
+TX-D00-018,dev-00,2026-07-13,11:26,1043.88,1043.88,Software Subscription,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.16,0.0,Low,Posted,dev,False,
+TX-D00-019,dev-00,2026-07-13,18:19,661.97,661.97,Office Supplies,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,4.41,0.3,Medium,Posted,dev,False,
+TX-D00-020,dev-00,2026-07-13,18:23,716.32,716.32,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.59,0.0,Low,Pending,dev,False,
+TX-D00-021,dev-00,2026-07-13,18:37,1700.0,1700.0,Vendor Payment,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,1,0,0,0.61,0.1,Low,Posted,dev,False,
+TX-D00-022,dev-00,2026-07-14,10:35,3703.48,3703.48,International Wire,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.62,0.1,Low,Posted,dev,False,
+TX-D00-023,dev-00,2026-07-14,14:50,4206.93,4206.93,Vendor Payment,ACC-1004,Treasury,2255,KZ,TR,available,1,1,0,0,0,0,1.5,0.15,Low,Pending,dev,False,
+TX-D00-024,dev-00,2026-07-14,16:17,5276.77,5276.77,International Wire,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,dev,False,
+TX-D00-025,dev-00,2026-07-15,09:19,9560.0,9560.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,GB,available,2,1,0,0,1,0,3.41,0.65,High,Under Review,dev,True,structuring
+TX-D00-026,dev-00,2026-07-15,11:50,9170.0,9170.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,1,0,3.27,0.5,High,Under Review,dev,True,structuring
+TX-D00-027,dev-00,2026-07-15,12:59,3114.7,3114.7,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.11,0.0,Low,Posted,dev,False,
+TX-D00-028,dev-00,2026-07-15,17:00,1438.4,1438.4,Vendor Payment,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.51,0.0,Low,Posted,dev,False,
+TX-D00-029,dev-00,2026-07-16,15:49,217.09,217.09,Client Refund,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.62,0.0,Low,Posted,dev,False,
+TX-D00-030,dev-00,2026-07-16,18:08,1328.03,1328.03,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,3.79,0.3,Medium,Posted,dev,False,
+TX-D00-031,dev-00,2026-07-17,08:44,7225.57,7225.57,Vendor Payment,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,2.58,0.1,Low,Pending,dev,False,
+TX-D00-032,dev-00,2026-07-17,09:11,440.9,440.9,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,dev,False,
+TX-D00-033,dev-00,2026-07-17,22:31,711.88,711.88,Utilities,ACC-1008,Treasury,655,KZ,US,missing,1,1,1,0,0,0,1.19,0.5,High,Under Review,dev,False,
+TX-D00-034,dev-00,2026-07-18,05:51,3284.4,3284.4,Payroll,ACC-1020,Treasury,45,TR,TR,available,1,0,1,0,0,1,0.73,0.2,Low,Posted,dev,False,
+TX-D00-035,dev-00,2026-07-18,11:56,89.89,89.89,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.6,0.0,Low,Posted,dev,False,
+TX-D00-036,dev-00,2026-07-18,13:43,747.55,747.55,Software Subscription,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.83,0.0,Low,Posted,dev,False,
+TX-D00-037,dev-00,2026-07-18,17:19,847.84,847.84,Software Subscription,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.94,0.0,Low,Pending,dev,False,
+TX-D00-038,dev-00,2026-07-19,03:01,3977.82,3977.82,Vendor Payment,ACC-1008,Treasury,655,KZ,KZ,available,1,0,1,0,0,0,1.42,0.1,Low,Posted,dev,False,
+TX-D00-039,dev-00,2026-07-19,13:47,182.28,182.28,Office Supplies,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.22,0.1,Low,Pending,dev,False,
+TX-D00-040,dev-00,2026-07-19,18:34,556.62,556.62,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.24,0.0,Low,Posted,dev,False,
+TX-D01-001,dev-01,2026-07-20,17:47,700.0,700.0,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.56,0.0,Low,Posted,dev,False,
+TX-D01-002,dev-01,2026-07-21,09:06,4565.72,5622.15,Payroll,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.01,0.1,Low,Posted,dev,True,record_mismatch
+TX-D01-003,dev-01,2026-07-21,11:55,5864.79,5864.79,Payroll,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.3,0.1,Low,Posted,dev,False,
+TX-D01-004,dev-01,2026-07-21,13:51,78.01,78.01,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.52,0.0,Low,Posted,dev,False,
+TX-D01-005,dev-01,2026-07-21,14:42,6151.59,6151.59,Vendor Payment,ACC-1009,Operating,252,KZ,TR,available,1,1,0,0,0,0,2.2,0.25,Medium,Posted,dev,False,
+TX-D01-006,dev-01,2026-07-22,00:47,956.91,956.91,Travel & Expenses,ACC-1019,Vendor,30,GB,DE,missing,1,1,1,0,0,1,2.13,0.7,High,Under Review,dev,True,foreign_offhours
+TX-D01-007,dev-01,2026-07-22,04:11,3024.3,3024.3,Vendor Payment,ACC-1020,Treasury,45,TR,KZ,missing,1,1,1,0,0,1,1.08,0.6,High,Under Review,dev,True,foreign_offhours
+TX-D01-008,dev-01,2026-07-22,14:30,563.42,563.42,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.25,0.0,Low,Posted,dev,False,
+TX-D01-009,dev-01,2026-07-23,14:23,3839.76,3839.76,Payroll,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.85,0.0,Low,Pending,dev,False,
+TX-D01-010,dev-01,2026-07-23,14:29,2465.8,2465.8,Vendor Payment,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,dev,False,
+TX-D01-011,dev-01,2026-07-24,08:48,2731.68,2731.68,International Wire,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.46,0.0,Low,Posted,dev,False,
+TX-D01-012,dev-01,2026-07-24,10:53,914.31,914.31,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,2.03,0.1,Low,Posted,dev,False,
+TX-D01-013,dev-01,2026-07-24,13:06,2559.12,2559.12,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,5.69,0.3,Medium,Posted,dev,True,large_amount
+TX-D01-014,dev-01,2026-07-25,10:14,3513.48,3513.48,Software Subscription,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,3.9,0.4,Medium,Pending,dev,False,
+TX-D01-015,dev-01,2026-07-25,14:25,2217.67,2217.67,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,0.79,0.25,Medium,Posted,dev,False,
+TX-D01-016,dev-01,2026-07-25,17:01,4730.76,4730.76,Utilities,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,7.88,0.3,Medium,Posted,dev,True,large_amount
+TX-D01-017,dev-01,2026-07-25,22:30,4801.6,4801.6,Vendor Payment,ACC-1017,Operating,432,DE,DE,available,1,0,1,0,0,0,1.71,0.1,Low,Pending,dev,False,
+TX-D01-018,dev-01,2026-07-26,00:09,2843.14,2843.14,Vendor Payment,ACC-1020,Treasury,45,TR,KZ,available,1,1,1,0,0,1,1.02,0.35,Medium,Posted,dev,True,foreign_offhours
+TX-D01-019,dev-01,2026-07-26,13:39,3138.0,3138.0,Vendor Payment,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.12,0.0,Low,Pending,dev,False,
+TX-D01-020,dev-01,2026-07-27,08:05,4900.01,4900.01,Vendor Payment,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.75,0.0,Low,Posted,dev,False,
+TX-D01-021,dev-01,2026-07-27,09:53,1440.12,1440.12,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.6,0.0,Low,Pending,dev,False,
+TX-D01-022,dev-01,2026-07-27,10:21,3479.2,3479.2,Payroll,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Posted,dev,False,
+TX-D01-023,dev-01,2026-07-27,15:13,1383.01,1383.01,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.49,0.1,Low,Posted,dev,False,
+TX-D01-024,dev-01,2026-07-27,15:49,767.02,767.02,Utilities,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.28,0.0,Low,Pending,dev,False,
+TX-D01-025,dev-01,2026-07-28,12:28,1387.06,1387.06,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.5,0.1,Low,Posted,dev,False,
+TX-D01-026,dev-01,2026-07-28,14:07,353.98,353.98,Utilities,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,0,0,0.59,0.05,Low,Pending,dev,False,
+TX-D01-027,dev-01,2026-07-28,15:58,1405.81,1405.81,Utilities,ACC-1004,Treasury,2255,KZ,KZ,available,2,0,0,0,0,0,2.34,0.15,Low,Posted,dev,False,
+TX-D01-028,dev-01,2026-07-28,19:43,4425.51,4425.51,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.58,0.1,Low,Posted,dev,False,
+TX-D01-029,dev-01,2026-07-29,13:43,4142.08,4142.08,Payroll,ACC-1009,Operating,252,KZ,KZ,missing,2,0,0,0,0,0,0.92,0.3,Medium,Posted,dev,False,
+TX-D01-030,dev-01,2026-07-29,16:13,569.46,569.46,Utilities,ACC-1009,Operating,252,KZ,KZ,available,2,0,0,0,0,0,0.95,0.05,Low,Posted,dev,False,
+TX-D01-031,dev-01,2026-07-30,10:09,1239.08,1239.08,Utilities,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,2.07,0.1,Low,Pending,dev,False,
+TX-D01-032,dev-01,2026-07-30,14:49,6872.31,6872.31,International Wire,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.15,0.0,Low,Posted,dev,False,
+TX-D01-033,dev-01,2026-07-30,16:08,3754.28,3754.28,Payroll,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.83,0.0,Low,Posted,dev,False,
+TX-D01-034,dev-01,2026-07-31,04:05,1085.41,1085.41,Utilities,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,1,0,0,0,1.81,0.1,Low,Posted,dev,False,
+TX-D01-035,dev-01,2026-07-31,09:21,4968.52,4968.52,International Wire,ACC-1011,Vendor,798,KZ,KZ,missing,1,0,0,0,0,0,0.83,0.25,Medium,Posted,dev,False,
+TX-D01-036,dev-01,2026-07-31,13:30,177.92,177.92,Client Refund,ACC-1019,Vendor,30,GB,GB,available,2,0,0,0,0,1,0.51,0.15,Low,Posted,dev,False,
+TX-D01-037,dev-01,2026-07-31,15:19,1094.37,1094.37,Client Refund,ACC-1019,Vendor,30,GB,GB,available,2,0,0,0,0,1,3.13,0.45,Medium,Posted,dev,False,
+TX-D01-038,dev-01,2026-07-31,19:04,2092.03,2092.03,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.75,0.1,Low,Pending,dev,False,
+TX-D01-039,dev-01,2026-08-01,18:54,845.44,845.44,Software Subscription,ACC-1006,Payroll,1966,KZ,GB,available,1,1,0,0,0,0,0.94,0.15,Low,Posted,dev,False,
+TX-D01-040,dev-01,2026-08-02,15:51,637.12,637.12,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.06,0.0,Low,Posted,dev,False,
+TX-D02-001,dev-02,2026-08-03,08:23,712.94,712.94,Software Subscription,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.79,0.0,Low,Posted,dev,False,
+TX-D02-002,dev-02,2026-08-03,12:01,1278.62,1278.62,Software Subscription,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.42,0.0,Low,Posted,dev,False,
+TX-D02-003,dev-02,2026-08-03,16:03,480.03,480.03,Utilities,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.8,0.0,Low,Posted,dev,False,
+TX-D02-004,dev-02,2026-08-04,11:32,177.59,177.59,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.18,0.0,Low,Posted,dev,False,
+TX-D02-005,dev-02,2026-08-04,11:44,5774.24,5774.24,Payroll,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.28,0.0,Low,Posted,dev,False,
+TX-D02-006,dev-02,2026-08-04,17:58,41102.81,41102.81,International Wire,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,6.85,0.4,Medium,Posted,dev,True,large_amount
+TX-D02-007,dev-02,2026-08-05,09:02,178.3,178.3,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.4,0.0,Low,Posted,dev,False,
+TX-D02-008,dev-02,2026-08-05,11:14,6739.02,6739.02,Payroll,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.5,0.0,Low,Posted,dev,False,
+TX-D02-009,dev-02,2026-08-05,12:51,89.58,89.58,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.6,0.0,Low,Pending,dev,False,
+TX-D02-010,dev-02,2026-08-06,09:05,3481.31,3481.31,Utilities,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,5.8,0.3,Medium,Posted,dev,True,large_amount
+TX-D02-011,dev-02,2026-08-06,12:28,391.44,391.44,Utilities,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.65,0.0,Low,Posted,dev,False,
+TX-D02-012,dev-02,2026-08-06,13:20,342.19,342.19,Client Refund,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,dev,False,
+TX-D02-013,dev-02,2026-08-06,23:23,236.32,236.32,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,missing,1,0,1,0,0,0,0.53,0.35,Medium,Posted,dev,False,
+TX-D02-014,dev-02,2026-08-07,08:35,254.8,254.8,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.57,0.0,Low,Posted,dev,False,
+TX-D02-015,dev-02,2026-08-07,11:28,1486.54,1486.54,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,3.3,0.4,Medium,Posted,dev,False,
+TX-D02-016,dev-02,2026-08-08,16:43,1771.09,1771.09,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.63,0.1,Low,Posted,dev,False,
+TX-D02-017,dev-02,2026-08-09,15:51,10632.74,10632.74,Payroll,ACC-1006,Payroll,1966,KZ,KZ,missing,1,0,0,0,0,0,2.36,0.35,Medium,Posted,dev,True,missing_document
+TX-D02-018,dev-02,2026-08-09,16:26,4147.04,4147.04,Vendor Payment,ACC-1015,Vendor,1309,KZ,KZ,missing,1,0,0,0,0,0,1.48,0.25,Medium,Posted,dev,False,
+TX-D02-019,dev-02,2026-08-10,01:15,15726.0,15726.0,Payroll,ACC-1018,Payroll,15,AE,GB,available,1,1,1,0,0,1,3.49,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D02-020,dev-02,2026-08-10,16:01,916.94,916.94,Software Subscription,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.02,0.0,Low,Posted,dev,False,
+TX-D02-021,dev-02,2026-08-11,03:39,5243.5,5243.5,Payroll,ACC-1014,Payroll,132,KZ,KZ,available,1,0,1,0,0,0,1.17,0.1,Low,Posted,dev,False,
+TX-D02-022,dev-02,2026-08-11,04:31,300.02,300.02,Office Supplies,ACC-1020,Treasury,45,TR,KZ,available,1,1,1,0,0,1,2.0,0.35,Medium,Posted,dev,True,foreign_offhours
+TX-D02-023,dev-02,2026-08-11,15:03,903.82,903.82,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,missing,1,0,0,0,0,0,0.32,0.25,Medium,Posted,dev,False,
+TX-D02-024,dev-02,2026-08-11,15:47,5919.63,5919.63,Software Subscription,ACC-1012,Treasury,2199,KZ,KZ,missing,2,0,0,0,0,0,6.58,0.6,High,Under Review,dev,True,large_amount
+TX-D02-025,dev-02,2026-08-11,22:53,212.74,212.74,Office Supplies,ACC-1012,Treasury,2199,KZ,KZ,available,2,0,1,0,0,0,1.42,0.15,Low,Pending,dev,False,
+TX-D02-026,dev-02,2026-08-12,13:30,5682.48,3503.77,Payroll,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.26,0.0,Low,Posted,dev,True,record_mismatch
+TX-D02-027,dev-02,2026-08-12,14:10,397.46,397.46,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,dev,False,
+TX-D02-028,dev-02,2026-08-12,16:37,1320.42,1320.42,Software Subscription,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.47,0.0,Low,Posted,dev,False,
+TX-D02-029,dev-02,2026-08-13,08:06,9260.0,9260.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,1,0,3.31,0.5,High,Under Review,dev,True,structuring
+TX-D02-030,dev-02,2026-08-13,10:24,9330.0,9330.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,missing,2,0,0,0,1,0,3.33,0.75,High,Under Review,dev,True,structuring
+TX-D02-031,dev-02,2026-08-14,08:57,21212.04,21212.04,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,4.71,0.3,Medium,Posted,dev,False,
+TX-D02-032,dev-02,2026-08-14,09:08,305.28,305.28,Utilities,ACC-1019,Vendor,30,GB,GB,available,2,0,0,0,0,1,0.51,0.15,Low,Posted,dev,False,
+TX-D02-033,dev-02,2026-08-14,09:23,199.92,199.92,Client Refund,ACC-1019,Vendor,30,GB,GB,available,2,0,0,0,0,1,0.57,0.15,Low,Posted,dev,False,
+TX-D02-034,dev-02,2026-08-14,11:07,481.26,481.26,Utilities,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.8,0.0,Low,Pending,dev,False,
+TX-D02-035,dev-02,2026-08-15,13:41,100.0,100.0,Office Supplies,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.67,0.0,Low,Posted,dev,False,
+TX-D02-036,dev-02,2026-08-15,13:49,122.14,122.14,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.35,0.0,Low,Posted,dev,False,
+TX-D02-037,dev-02,2026-08-15,19:27,181.22,181.22,Travel & Expenses,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.4,0.0,Low,Posted,dev,False,
+TX-D02-038,dev-02,2026-08-16,09:11,2824.1,2824.1,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,6.28,0.55,High,Under Review,dev,True,large_amount
+TX-D02-039,dev-02,2026-08-16,17:21,541.71,541.71,Client Refund,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.55,0.0,Low,Posted,dev,False,
+TX-D02-040,dev-02,2026-08-16,19:44,95.92,95.92,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.64,0.0,Low,Posted,dev,False,
+TX-D03-001,dev-03,2026-08-17,08:56,2510.86,2510.86,Client Refund,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,7.17,0.3,Medium,Posted,dev,True,large_amount
+TX-D03-002,dev-03,2026-08-17,13:13,773.78,773.78,Client Refund,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,2.21,0.2,Low,Posted,dev,False,
+TX-D03-003,dev-03,2026-08-17,15:41,609.91,609.91,Software Subscription,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Posted,dev,False,
+TX-D03-004,dev-03,2026-08-18,10:54,900.0,900.0,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,2.0,0.0,Low,Posted,dev,False,
+TX-D03-005,dev-03,2026-08-18,16:22,829.39,829.39,Software Subscription,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.92,0.0,Low,Posted,dev,False,
+TX-D03-006,dev-03,2026-08-19,08:25,120.11,120.11,Office Supplies,ACC-1020,Treasury,45,TR,TR,available,2,0,0,0,0,1,0.8,0.15,Low,Posted,dev,False,
+TX-D03-007,dev-03,2026-08-19,10:51,4067.26,4067.26,Payroll,ACC-1020,Treasury,45,TR,TR,available,2,0,0,0,0,1,0.9,0.15,Low,Posted,dev,False,
+TX-D03-008,dev-03,2026-08-19,11:18,9110.0,9110.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,1,0,1.52,0.2,Low,Posted,dev,True,structuring
+TX-D03-009,dev-03,2026-08-19,15:23,9190.0,9190.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,missing,2,0,0,0,1,0,1.53,0.45,Medium,Posted,dev,True,structuring
+TX-D03-010,dev-03,2026-08-20,15:30,558.49,558.49,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.62,0.0,Low,Posted,dev,False,
+TX-D03-011,dev-03,2026-08-20,23:21,876.46,876.46,Office Supplies,ACC-1020,Treasury,45,TR,US,available,1,1,1,0,0,1,5.84,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D03-012,dev-03,2026-08-21,11:04,509.76,509.76,Utilities,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.85,0.0,Low,Posted,dev,False,
+TX-D03-013,dev-03,2026-08-21,11:58,581.33,581.33,Client Refund,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,1.66,0.05,Low,Posted,dev,False,
+TX-D03-014,dev-03,2026-08-21,14:17,4021.95,4021.95,Payroll,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,0.89,0.05,Low,Posted,dev,False,
+TX-D03-015,dev-03,2026-08-22,00:21,232.88,232.88,Office Supplies,ACC-1018,Payroll,15,AE,US,missing,1,1,1,0,0,1,1.55,0.6,High,Under Review,dev,True,foreign_offhours
+TX-D03-016,dev-03,2026-08-22,13:54,537.97,537.97,Utilities,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.9,0.1,Low,Posted,dev,False,
+TX-D03-017,dev-03,2026-08-22,17:55,600.0,600.0,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.33,0.0,Low,Posted,dev,False,
+TX-D03-018,dev-03,2026-08-22,19:47,8467.47,8467.47,International Wire,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.41,0.0,Low,Posted,dev,False,
+TX-D03-019,dev-03,2026-08-23,05:50,48.63,48.63,Office Supplies,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,1,0,0,0,0.32,0.1,Low,Pending,dev,False,
+TX-D03-020,dev-03,2026-08-23,15:34,121.88,121.88,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.81,0.0,Low,Posted,dev,False,
+TX-D03-021,dev-03,2026-08-23,16:17,3209.57,3209.57,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.15,0.0,Low,Posted,dev,False,
+TX-D03-022,dev-03,2026-08-24,10:10,1200.0,1200.0,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,1,0,0,0.43,0.1,Low,Posted,dev,False,
+TX-D03-023,dev-03,2026-08-24,13:25,109.45,109.45,Office Supplies,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.73,0.1,Low,Posted,dev,False,
+TX-D03-024,dev-03,2026-08-25,11:38,9230.0,9230.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.54,0.3,Medium,Posted,dev,True,structuring
+TX-D03-025,dev-03,2026-08-25,12:54,9190.0,9190.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.28,0.6,High,Under Review,dev,True,structuring
+TX-D03-026,dev-03,2026-08-25,14:25,9490.0,9490.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.58,0.3,Medium,Posted,dev,True,structuring
+TX-D03-027,dev-03,2026-08-25,15:19,615.89,615.89,Software Subscription,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Posted,dev,False,
+TX-D03-028,dev-03,2026-08-25,16:03,523.44,523.44,Client Refund,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.5,0.0,Low,Posted,dev,False,
+TX-D03-029,dev-03,2026-08-25,16:20,3914.8,3914.8,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,1.4,0.0,Low,Posted,dev,False,
+TX-D03-030,dev-03,2026-08-25,17:17,5950.12,5950.12,Payroll,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.32,0.0,Low,Posted,dev,False,
+TX-D03-031,dev-03,2026-08-25,19:37,170.08,170.08,Office Supplies,ACC-1016,Treasury,2074,US,US,missing,1,0,0,0,0,0,1.13,0.25,Medium,Pending,dev,False,
+TX-D03-032,dev-03,2026-08-26,10:09,463.08,463.08,Utilities,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Posted,dev,False,
+TX-D03-033,dev-03,2026-08-26,17:14,17705.98,17705.98,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,3.93,0.3,Medium,Posted,dev,False,
+TX-D03-034,dev-03,2026-08-27,02:14,20404.02,20404.02,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,missing,1,0,1,0,0,0,7.29,0.65,High,Under Review,dev,True,large_amount
+TX-D03-035,dev-03,2026-08-27,16:17,1093.06,1093.06,Client Refund,ACC-1009,Operating,252,KZ,KZ,missing,1,0,0,0,0,0,3.12,0.55,High,Under Review,dev,False,
+TX-D03-036,dev-03,2026-08-28,16:08,2474.8,2474.8,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,dev,False,
+TX-D03-037,dev-03,2026-08-28,18:34,2500.0,2500.0,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,1,0,0,0.89,0.1,Low,Posted,dev,False,
+TX-D03-038,dev-03,2026-08-28,19:47,114.66,114.66,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,0.76,0.0,Low,Posted,dev,False,
+TX-D03-039,dev-03,2026-08-30,11:23,705.3,705.3,Utilities,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,1.18,0.0,Low,Posted,dev,False,
+TX-D03-040,dev-03,2026-08-30,16:25,6581.66,6581.66,Vendor Payment,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,2.35,0.1,Low,Posted,dev,False,
+TX-D04-001,dev-04,2026-08-31,08:53,736.67,736.67,Software Subscription,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,dev,False,
+TX-D04-002,dev-04,2026-08-31,14:05,468.73,468.73,Travel & Expenses,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.04,0.1,Low,Posted,dev,False,
+TX-D04-003,dev-04,2026-08-31,18:58,3469.44,3469.44,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Pending,dev,False,
+TX-D04-004,dev-04,2026-09-01,12:45,37283.73,37283.73,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,8.29,0.3,Medium,Posted,dev,True,large_amount
+TX-D04-005,dev-04,2026-09-01,14:20,1800.0,1800.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,1,0,0,0.64,0.1,Low,Posted,dev,False,
+TX-D04-006,dev-04,2026-09-01,15:06,5430.38,5430.38,Payroll,ACC-1017,Operating,432,DE,DE,available,2,0,0,0,0,0,1.21,0.05,Low,Posted,dev,False,
+TX-D04-007,dev-04,2026-09-01,16:22,512.45,512.45,Software Subscription,ACC-1017,Operating,432,DE,DE,available,2,0,0,0,0,0,0.57,0.05,Low,Posted,dev,False,
+TX-D04-008,dev-04,2026-09-02,01:24,600.88,600.88,Software Subscription,ACC-1009,Operating,252,KZ,KZ,available,1,0,1,0,0,0,0.67,0.1,Low,Posted,dev,False,
+TX-D04-009,dev-04,2026-09-02,09:41,25907.3,25907.3,Payroll,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,5.76,0.3,Medium,Posted,dev,True,large_amount
+TX-D04-010,dev-04,2026-09-02,16:56,1049.46,1049.46,Software Subscription,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.17,0.0,Low,Pending,dev,False,
+TX-D04-011,dev-04,2026-09-03,08:16,6988.16,6988.16,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,2.5,0.2,Low,Pending,dev,False,
+TX-D04-012,dev-04,2026-09-03,11:44,269.53,269.53,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.6,0.0,Low,Posted,dev,False,
+TX-D04-013,dev-04,2026-09-03,13:46,28327.79,28327.79,International Wire,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,4.72,0.4,Medium,Posted,dev,False,
+TX-D04-014,dev-04,2026-09-03,14:32,700.0,700.0,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.56,0.0,Low,Posted,dev,False,
+TX-D04-015,dev-04,2026-09-04,04:49,9790.0,9790.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,2,0,1,0,1,0,1.63,0.3,Medium,Posted,dev,True,structuring
+TX-D04-016,dev-04,2026-09-04,08:08,3715.65,3715.65,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.83,0.1,Low,Posted,dev,False,
+TX-D04-017,dev-04,2026-09-04,09:12,919.8,919.8,Software Subscription,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.02,0.1,Low,Pending,dev,False,
+TX-D04-018,dev-04,2026-09-04,09:47,9970.0,9970.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,2,0,0,0,1,0,3.56,0.5,High,Under Review,dev,True,structuring
+TX-D04-019,dev-04,2026-09-04,12:16,232.37,232.37,Client Refund,ACC-1005,Operating,1496,KZ,TR,available,1,1,0,0,0,0,0.66,0.15,Low,Posted,dev,False,
+TX-D04-020,dev-04,2026-09-04,19:41,7236.56,7236.56,International Wire,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.21,0.0,Low,Posted,dev,False,
+TX-D04-021,dev-04,2026-09-05,11:12,448.41,448.41,Client Refund,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.28,0.0,Low,Posted,dev,False,
+TX-D04-022,dev-04,2026-09-05,18:45,386.38,386.38,Travel & Expenses,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.86,0.0,Low,Posted,dev,False,
+TX-D04-023,dev-04,2026-09-06,17:13,397.77,397.77,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.88,0.0,Low,Posted,dev,False,
+TX-D04-024,dev-04,2026-09-06,17:50,5172.89,5172.89,Payroll,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,1.15,0.0,Low,Posted,dev,False,
+TX-D04-025,dev-04,2026-09-07,15:06,100.0,100.0,Office Supplies,ACC-1004,Treasury,2255,KZ,TR,available,1,1,0,0,0,0,0.67,0.15,Low,Posted,dev,False,
+TX-D04-026,dev-04,2026-09-08,16:08,494.58,494.58,Travel & Expenses,ACC-1019,Vendor,30,GB,TR,available,1,1,0,0,0,1,1.1,0.25,Medium,Posted,dev,False,
+TX-D04-027,dev-04,2026-09-08,16:55,5229.44,5229.44,Payroll,ACC-1020,Treasury,45,TR,KZ,available,1,1,0,0,0,1,1.16,0.25,Medium,Pending,dev,False,
+TX-D04-028,dev-04,2026-09-09,10:53,500.0,500.0,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.11,0.1,Low,Posted,dev,False,
+TX-D04-029,dev-04,2026-09-09,19:38,942.68,942.68,Software Subscription,ACC-1018,Payroll,15,AE,AE,available,2,0,0,0,0,1,1.05,0.15,Low,Posted,dev,False,
+TX-D04-030,dev-04,2026-09-09,23:48,10982.97,10982.97,Payroll,ACC-1018,Payroll,15,AE,TR,missing,2,1,1,0,0,1,2.44,0.75,High,Under Review,dev,True,foreign_offhours
+TX-D04-031,dev-04,2026-09-10,09:04,4100.0,4100.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,1,0,0,1.46,0.1,Low,Posted,dev,False,
+TX-D04-032,dev-04,2026-09-10,09:19,4068.08,4068.08,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.45,0.0,Low,Posted,dev,False,
+TX-D04-033,dev-04,2026-09-11,14:24,1485.11,1485.11,Software Subscription,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.65,0.0,Low,Pending,dev,False,
+TX-D04-034,dev-04,2026-09-11,15:11,6341.28,6341.28,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.41,0.0,Low,Pending,dev,False,
+TX-D04-035,dev-04,2026-09-12,08:51,122.49,122.49,Office Supplies,ACC-1001,Operating,2368,KZ,KZ,missing,1,0,0,0,0,0,0.82,0.25,Medium,Posted,dev,False,
+TX-D04-036,dev-04,2026-09-12,11:49,9240.0,9240.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,1.54,0.3,Medium,Pending,dev,True,structuring
+TX-D04-037,dev-04,2026-09-12,16:37,9350.0,9350.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,1.56,0.3,Medium,Posted,dev,True,structuring
+TX-D04-038,dev-04,2026-09-12,17:32,9140.0,9140.0,Vendor Payment,ACC-1013,Operating,2292,KZ,KZ,available,3,0,0,0,1,0,3.26,0.6,High,Under Review,dev,True,structuring
+TX-D04-039,dev-04,2026-09-13,01:31,530.23,530.23,Office Supplies,ACC-1018,Payroll,15,AE,GB,available,1,1,1,0,0,1,3.53,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D04-040,dev-04,2026-09-13,13:55,900.0,900.0,Utilities,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.5,0.0,Low,Posted,dev,False,
+TX-D05-001,dev-05,2026-09-14,12:03,953.55,953.55,Software Subscription,ACC-1012,Treasury,2199,KZ,KZ,missing,1,0,0,0,0,0,1.06,0.25,Medium,Pending,dev,False,
+TX-D05-002,dev-05,2026-09-14,14:52,277.24,277.24,Client Refund,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.79,0.0,Low,Posted,dev,False,
+TX-D05-003,dev-05,2026-09-14,17:46,857.36,857.36,Client Refund,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,2.45,0.1,Low,Posted,dev,False,
+TX-D05-004,dev-05,2026-09-15,12:04,4900.0,4900.0,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,1,0,1,1.09,0.2,Low,Posted,dev,False,
+TX-D05-005,dev-05,2026-09-15,12:51,900.0,900.0,Software Subscription,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.0,0.0,Low,Posted,dev,False,
+TX-D05-006,dev-05,2026-09-15,13:30,418.24,418.24,Client Refund,ACC-1010,Payroll,834,KZ,AE,available,2,1,0,0,0,0,1.19,0.2,Low,Posted,dev,False,
+TX-D05-007,dev-05,2026-09-15,14:34,700.0,700.0,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.56,0.0,Low,Posted,dev,False,
+TX-D05-008,dev-05,2026-09-15,16:17,3951.9,3951.9,Vendor Payment,ACC-1010,Payroll,834,KZ,KZ,available,2,0,0,0,0,0,1.41,0.05,Low,Posted,dev,False,
+TX-D05-009,dev-05,2026-09-16,09:29,5868.62,5868.62,Payroll,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.3,0.0,Low,Posted,dev,False,
+TX-D05-010,dev-05,2026-09-16,11:51,436.73,436.73,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.97,0.0,Low,Posted,dev,False,
+TX-D05-011,dev-05,2026-09-17,08:21,973.61,737.72,Software Subscription,ACC-1015,Vendor,1309,KZ,TR,available,1,1,0,0,0,0,1.08,0.15,Low,Posted,dev,True,record_mismatch
+TX-D05-012,dev-05,2026-09-17,17:41,4727.01,4727.01,Vendor Payment,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,1.69,0.0,Low,Posted,dev,False,
+TX-D05-013,dev-05,2026-09-18,11:04,5197.05,5197.05,Vendor Payment,ACC-1005,Operating,1496,KZ,KZ,available,2,0,0,0,0,0,1.86,0.05,Low,Posted,dev,False,
+TX-D05-014,dev-05,2026-09-18,15:07,1244.55,1244.55,Software Subscription,ACC-1005,Operating,1496,KZ,KZ,available,2,0,0,0,0,0,1.38,0.05,Low,Posted,dev,False,
+TX-D05-015,dev-05,2026-09-19,11:17,3900.0,3900.0,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,1,0,0,1.39,0.1,Low,Posted,dev,False,
+TX-D05-016,dev-05,2026-09-19,12:24,222.39,222.39,Client Refund,ACC-1016,Treasury,2074,US,US,missing,2,0,0,0,0,0,0.64,0.3,Medium,Posted,dev,False,
+TX-D05-017,dev-05,2026-09-19,18:05,3114.53,3114.53,Vendor Payment,ACC-1016,Treasury,2074,US,US,available,2,0,0,0,0,0,1.11,0.05,Low,Posted,dev,False,
+TX-D05-018,dev-05,2026-09-19,18:19,3729.57,3729.57,Vendor Payment,ACC-1006,Payroll,1966,KZ,KZ,missing,1,0,0,0,0,0,1.33,0.25,Medium,Pending,dev,False,
+TX-D05-019,dev-05,2026-09-20,08:16,694.81,694.81,Software Subscription,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.77,0.0,Low,Pending,dev,False,
+TX-D05-020,dev-05,2026-09-20,10:25,9630.0,9630.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.44,0.6,High,Under Review,dev,True,structuring
+TX-D05-021,dev-05,2026-09-20,10:36,9940.0,9940.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,3.55,0.6,High,Under Review,dev,True,structuring
+TX-D05-022,dev-05,2026-09-20,16:37,4200.0,4200.0,Payroll,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,1,0,0,0.93,0.1,Low,Posted,dev,False,
+TX-D05-023,dev-05,2026-09-20,18:21,9150.0,9150.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.52,0.3,Medium,Posted,dev,True,structuring
+TX-D05-024,dev-05,2026-09-21,12:57,4794.88,4794.88,Payroll,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.07,0.0,Low,Posted,dev,False,
+TX-D05-025,dev-05,2026-09-21,15:16,409.82,409.82,Utilities,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Pending,dev,False,
+TX-D05-026,dev-05,2026-09-21,15:42,724.64,724.64,Office Supplies,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,4.83,0.3,Medium,Posted,dev,False,
+TX-D05-027,dev-05,2026-09-22,15:44,958.3,958.3,Software Subscription,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.06,0.0,Low,Posted,dev,False,
+TX-D05-028,dev-05,2026-09-23,09:37,5315.65,5315.65,International Wire,ACC-1013,Operating,2292,KZ,KZ,missing,1,0,0,0,0,0,0.89,0.25,Medium,Posted,dev,False,
+TX-D05-029,dev-05,2026-09-23,09:53,1436.22,1436.22,Software Subscription,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.6,0.1,Low,Posted,dev,False,
+TX-D05-030,dev-05,2026-09-23,10:52,272.41,272.41,Client Refund,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.78,0.1,Low,Posted,dev,False,
+TX-D05-031,dev-05,2026-09-23,12:09,126.41,174.91,Office Supplies,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.84,0.0,Low,Posted,dev,True,record_mismatch
+TX-D05-032,dev-05,2026-09-23,15:16,1500.0,1500.0,Software Subscription,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,1,0,0,1.67,0.1,Low,Posted,dev,False,
+TX-D05-033,dev-05,2026-09-24,08:58,425.84,425.84,Utilities,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.71,0.0,Low,Pending,dev,False,
+TX-D05-034,dev-05,2026-09-24,09:21,452.99,452.99,Client Refund,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.29,0.0,Low,Posted,dev,False,
+TX-D05-035,dev-05,2026-09-24,18:22,700.24,700.24,Client Refund,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,2.0,0.0,Low,Posted,dev,False,
+TX-D05-036,dev-05,2026-09-25,08:59,2587.69,2587.69,Utilities,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,4.31,0.3,Medium,Posted,dev,False,
+TX-D05-037,dev-05,2026-09-25,10:36,535.31,535.31,Office Supplies,ACC-1008,Treasury,655,KZ,KZ,missing,1,0,0,0,0,0,3.57,0.55,High,Under Review,dev,True,missing_document
+TX-D05-038,dev-05,2026-09-25,13:40,554.88,554.88,Travel & Expenses,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.23,0.1,Low,Posted,dev,False,
+TX-D05-039,dev-05,2026-09-25,17:38,1168.72,1168.72,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.42,0.0,Low,Posted,dev,False,
+TX-D05-040,dev-05,2026-09-26,05:25,781.32,781.32,Office Supplies,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,1,0,0,0,5.21,0.4,Medium,Posted,dev,True,large_amount
+TX-D06-001,dev-06,2026-09-28,13:30,636.7,636.7,Software Subscription,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.71,0.1,Low,Posted,dev,False,
+TX-D06-002,dev-06,2026-09-28,14:47,468.06,468.06,Travel & Expenses,ACC-1016,Treasury,2074,US,US,available,2,0,0,0,0,0,1.04,0.05,Low,Posted,dev,False,
+TX-D06-003,dev-06,2026-09-28,16:53,3913.88,3913.88,Payroll,ACC-1016,Treasury,2074,US,US,available,2,0,0,0,0,0,0.87,0.05,Low,Posted,dev,False,
+TX-D06-004,dev-06,2026-09-29,03:36,5292.61,5292.61,Payroll,ACC-1020,Treasury,45,TR,TR,available,1,0,1,0,0,1,1.18,0.2,Low,Posted,dev,False,
+TX-D06-005,dev-06,2026-09-29,15:06,384.55,384.55,Travel & Expenses,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.85,0.0,Low,Posted,dev,False,
+TX-D06-006,dev-06,2026-09-29,18:12,3583.76,3583.76,Vendor Payment,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.28,0.0,Low,Posted,dev,False,
+TX-D06-007,dev-06,2026-09-29,22:58,1500.0,1500.0,Vendor Payment,ACC-1001,Operating,2368,KZ,KZ,available,1,0,1,1,0,0,0.54,0.2,Low,Pending,dev,False,
+TX-D06-008,dev-06,2026-09-30,08:48,285.06,285.06,Client Refund,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.81,0.1,Low,Posted,dev,False,
+TX-D06-009,dev-06,2026-09-30,12:31,4435.69,4435.69,Payroll,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.99,0.0,Low,Pending,dev,False,
+TX-D06-010,dev-06,2026-09-30,16:07,1056.52,1056.52,Software Subscription,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.17,0.0,Low,Posted,dev,False,
+TX-D06-011,dev-06,2026-10-01,17:56,297.97,297.97,Office Supplies,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.99,0.0,Low,Posted,dev,False,
+TX-D06-012,dev-06,2026-10-01,19:32,687.1,687.1,Software Subscription,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.76,0.0,Low,Pending,dev,False,
+TX-D06-013,dev-06,2026-10-02,10:07,1464.39,1464.39,Software Subscription,ACC-1018,Payroll,15,AE,KZ,missing,1,1,0,0,0,1,1.63,0.5,High,Under Review,dev,False,
+TX-D06-014,dev-06,2026-10-03,00:00,4259.04,4259.04,Payroll,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,1,0,0,0,0.95,0.1,Low,Posted,dev,False,
+TX-D06-015,dev-06,2026-10-03,09:33,310.92,310.92,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.69,0.1,Low,Posted,dev,False,
+TX-D06-016,dev-06,2026-10-03,15:05,3726.37,3726.37,International Wire,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.62,0.0,Low,Posted,dev,False,
+TX-D06-017,dev-06,2026-10-03,17:54,199.99,199.99,Office Supplies,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.33,0.0,Low,Posted,dev,False,
+TX-D06-018,dev-06,2026-10-03,18:09,4415.56,4415.56,Payroll,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,dev,False,
+TX-D06-019,dev-06,2026-10-04,11:08,105.71,105.71,Office Supplies,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,0.7,0.0,Low,Posted,dev,False,
+TX-D06-020,dev-06,2026-10-05,17:20,2189.09,2189.09,International Wire,ACC-1006,Payroll,1966,KZ,KZ,missing,1,0,0,0,0,0,0.36,0.25,Medium,Posted,dev,False,
+TX-D06-021,dev-06,2026-10-06,10:28,982.39,982.39,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,2.18,0.1,Low,Posted,dev,False,
+TX-D06-022,dev-06,2026-10-07,03:11,20340.42,20340.42,International Wire,ACC-1018,Payroll,15,AE,DE,available,1,1,1,0,0,1,3.39,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D06-023,dev-06,2026-10-07,08:23,178.93,178.93,Office Supplies,ACC-1011,Vendor,798,KZ,KZ,available,3,0,0,0,0,0,1.19,0.15,Low,Posted,dev,False,
+TX-D06-024,dev-06,2026-10-07,11:41,340.57,340.57,Utilities,ACC-1011,Vendor,798,KZ,KZ,available,3,0,0,0,0,0,0.57,0.15,Low,Pending,dev,False,
+TX-D06-025,dev-06,2026-10-07,18:13,7431.92,7431.92,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,3,0,0,0,0,0,1.65,0.15,Low,Posted,dev,False,
+TX-D06-026,dev-06,2026-10-08,10:13,4560.77,4560.77,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.63,0.1,Low,Posted,dev,False,
+TX-D06-027,dev-06,2026-10-08,15:25,263.86,263.86,Office Supplies,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.76,0.0,Low,Posted,dev,False,
+TX-D06-028,dev-06,2026-10-08,19:20,203.44,203.44,Office Supplies,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.36,0.0,Low,Posted,dev,False,
+TX-D06-029,dev-06,2026-10-09,15:57,28484.42,28484.42,International Wire,ACC-1019,Vendor,30,GB,GB,missing,1,0,0,0,0,1,4.75,0.65,High,Under Review,dev,True,missing_document
+TX-D06-030,dev-06,2026-10-09,18:41,500.19,500.19,Utilities,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.83,0.0,Low,Posted,dev,False,
+TX-D06-031,dev-06,2026-10-10,08:28,9600.0,9600.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,4,0,0,1,1,0,3.43,0.7,High,Under Review,dev,True,structuring
+TX-D06-032,dev-06,2026-10-10,08:53,9420.0,9420.0,Vendor Payment,ACC-1009,Operating,252,KZ,KZ,available,4,0,0,0,1,0,3.36,0.6,High,Under Review,dev,True,structuring
+TX-D06-033,dev-06,2026-10-10,09:39,9250.0,9250.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,4,0,0,0,1,0,1.54,0.3,Medium,Posted,dev,True,structuring
+TX-D06-034,dev-06,2026-10-10,10:25,555.98,555.98,Office Supplies,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,3.71,0.3,Medium,Posted,dev,False,
+TX-D06-035,dev-06,2026-10-10,11:48,5501.18,4928.79,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,1.96,0.1,Low,Posted,dev,True,record_mismatch
+TX-D06-036,dev-06,2026-10-10,12:54,144.83,144.83,Office Supplies,ACC-1009,Operating,252,KZ,KZ,available,4,0,0,0,0,0,0.97,0.15,Low,Posted,dev,False,
+TX-D06-037,dev-06,2026-10-10,13:57,8255.16,8255.16,Vendor Payment,ACC-1006,Payroll,1966,KZ,GB,available,1,1,0,0,0,0,2.95,0.25,Medium,Posted,dev,False,
+TX-D06-038,dev-06,2026-10-11,09:14,41.58,41.58,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.28,0.0,Low,Posted,dev,False,
+TX-D06-039,dev-06,2026-10-11,13:08,3500.0,3500.0,International Wire,ACC-1002,Payroll,1607,KZ,KZ,missing,1,0,0,1,0,0,0.58,0.35,Medium,Posted,dev,False,
+TX-D06-040,dev-06,2026-10-11,17:30,436.74,436.74,Travel & Expenses,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.97,0.0,Low,Posted,dev,False,
+TX-D07-001,dev-07,2026-10-12,14:53,2787.96,2787.96,Vendor Payment,ACC-1016,Treasury,2074,US,KZ,available,1,1,0,0,0,0,1.0,0.15,Low,Posted,dev,False,
+TX-D07-002,dev-07,2026-10-12,15:31,6800.0,6800.0,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,2,0,0,1,0,0,1.51,0.15,Low,Posted,dev,False,
+TX-D07-003,dev-07,2026-10-12,17:46,461.57,461.57,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,missing,1,0,0,0,0,0,1.03,0.25,Medium,Pending,dev,False,
+TX-D07-004,dev-07,2026-10-12,18:38,121.99,121.99,Client Refund,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.35,0.0,Low,Pending,dev,False,
+TX-D07-005,dev-07,2026-10-12,18:51,920.77,920.77,Travel & Expenses,ACC-1011,Vendor,798,KZ,KZ,available,2,0,0,0,0,0,2.05,0.15,Low,Pending,dev,False,
+TX-D07-006,dev-07,2026-10-13,10:26,2872.35,2872.35,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,missing,1,0,0,0,0,0,6.38,0.55,High,Under Review,dev,True,large_amount
+TX-D07-007,dev-07,2026-10-13,13:42,406.29,406.29,Client Refund,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,1.16,0.05,Low,Posted,dev,False,
+TX-D07-008,dev-07,2026-10-13,14:25,718.2,718.2,Software Subscription,ACC-1016,Treasury,2074,US,AE,available,1,1,0,0,0,0,0.8,0.15,Low,Posted,dev,False,
+TX-D07-009,dev-07,2026-10-13,14:50,423.14,423.14,Client Refund,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,1.21,0.05,Low,Pending,dev,False,
+TX-D07-010,dev-07,2026-10-14,08:32,400.06,400.06,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.89,0.0,Low,Posted,dev,False,
+TX-D07-011,dev-07,2026-10-14,10:18,3111.1,2327.89,International Wire,ACC-1004,Treasury,2255,KZ,DE,missing,1,1,0,0,0,0,0.52,0.4,Medium,Posted,dev,True,record_mismatch
+TX-D07-012,dev-07,2026-10-14,11:20,704.58,704.58,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.57,0.0,Low,Pending,dev,False,
+TX-D07-013,dev-07,2026-10-14,11:27,96.06,96.06,Office Supplies,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,0.64,0.0,Low,Posted,dev,False,
+TX-D07-014,dev-07,2026-10-14,15:26,5833.73,5833.73,Payroll,ACC-1013,Operating,2292,KZ,DE,available,1,1,0,0,0,0,1.3,0.15,Low,Posted,dev,False,
+TX-D07-015,dev-07,2026-10-14,17:19,4607.34,4607.34,Payroll,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.02,0.1,Low,Posted,dev,False,
+TX-D07-016,dev-07,2026-10-15,08:02,6887.56,6887.56,Payroll,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,1.53,0.0,Low,Posted,dev,False,
+TX-D07-017,dev-07,2026-10-16,11:23,3431.52,2368.21,Vendor Payment,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.23,0.0,Low,Pending,dev,True,record_mismatch
+TX-D07-018,dev-07,2026-10-16,11:31,560.65,671.84,Software Subscription,ACC-1018,Payroll,15,AE,AE,missing,1,0,0,0,0,1,0.62,0.35,Medium,Pending,dev,True,record_mismatch
+TX-D07-019,dev-07,2026-10-16,16:29,100.0,100.0,Office Supplies,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.67,0.0,Low,Posted,dev,False,
+TX-D07-020,dev-07,2026-10-17,08:32,3622.22,3622.22,Vendor Payment,ACC-1013,Operating,2292,KZ,GB,available,1,1,0,0,0,0,1.29,0.15,Low,Posted,dev,False,
+TX-D07-021,dev-07,2026-10-17,16:51,646.73,646.73,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,1.44,0.0,Low,Posted,dev,False,
+TX-D07-022,dev-07,2026-10-18,15:52,5670.17,5670.17,Vendor Payment,ACC-1014,Payroll,132,KZ,AE,available,1,1,0,0,0,0,2.03,0.25,Medium,Posted,dev,False,
+TX-D07-023,dev-07,2026-10-19,16:00,3800.0,3800.0,Vendor Payment,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,1,0,0,1.36,0.1,Low,Posted,dev,False,
+TX-D07-024,dev-07,2026-10-19,18:40,307.32,307.32,Travel & Expenses,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Posted,dev,False,
+TX-D07-025,dev-07,2026-10-19,22:32,956.04,956.04,Travel & Expenses,ACC-1016,Treasury,2074,US,US,available,1,0,1,0,0,0,2.12,0.2,Low,Posted,dev,False,
+TX-D07-026,dev-07,2026-10-19,23:20,2569.91,2569.91,Client Refund,ACC-1018,Payroll,15,AE,GB,available,1,1,1,0,0,1,7.34,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D07-027,dev-07,2026-10-20,08:26,358.25,358.25,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.02,0.0,Low,Posted,dev,False,
+TX-D07-028,dev-07,2026-10-20,18:15,3850.81,3850.81,International Wire,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.64,0.0,Low,Posted,dev,False,
+TX-D07-029,dev-07,2026-10-21,10:10,996.92,996.92,Utilities,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.66,0.0,Low,Pending,dev,False,
+TX-D07-030,dev-07,2026-10-21,18:54,308.16,308.16,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.68,0.0,Low,Pending,dev,False,
+TX-D07-031,dev-07,2026-10-22,09:31,370.77,370.77,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,2,0,0,0,0,0,0.82,0.05,Low,Pending,dev,False,
+TX-D07-032,dev-07,2026-10-22,10:25,2351.6,2351.6,Travel & Expenses,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,5.23,0.3,Medium,Posted,dev,True,large_amount
+TX-D07-033,dev-07,2026-10-22,14:57,6634.77,6634.77,Software Subscription,ACC-1006,Payroll,1966,KZ,KZ,missing,2,0,0,0,0,0,7.37,0.6,High,Under Review,dev,True,large_amount
+TX-D07-034,dev-07,2026-10-23,10:22,316.95,316.95,Software Subscription,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,0.35,0.05,Low,Posted,dev,False,
+TX-D07-035,dev-07,2026-10-23,12:16,6646.9,6646.9,International Wire,ACC-1003,Vendor,1748,KZ,KZ,available,1,0,0,0,0,0,1.11,0.0,Low,Posted,dev,False,
+TX-D07-036,dev-07,2026-10-23,16:03,3157.63,3157.63,Vendor Payment,ACC-1007,Vendor,2104,KZ,GB,available,2,1,0,0,0,0,1.13,0.2,Low,Posted,dev,False,
+TX-D07-037,dev-07,2026-10-23,19:32,935.29,935.29,Software Subscription,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.04,0.1,Low,Pending,dev,False,
+TX-D07-038,dev-07,2026-10-24,12:25,271.64,271.64,Office Supplies,ACC-1016,Treasury,2074,US,US,available,1,0,0,0,0,0,1.81,0.0,Low,Posted,dev,False,
+TX-D07-039,dev-07,2026-10-25,08:10,657.38,657.38,Software Subscription,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.73,0.0,Low,Posted,dev,False,
+TX-D07-040,dev-07,2026-10-25,15:34,370.96,370.96,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,dev,False,
+TX-D08-001,dev-08,2026-10-26,11:46,673.93,673.93,Client Refund,ACC-1018,Payroll,15,AE,AE,missing,2,0,0,0,0,1,1.93,0.4,Medium,Posted,dev,True,missing_document
+TX-D08-002,dev-08,2026-10-26,12:36,6502.37,6502.37,International Wire,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,1.08,0.1,Low,Pending,dev,False,
+TX-D08-003,dev-08,2026-10-26,15:45,177.08,177.08,Office Supplies,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.18,0.0,Low,Posted,dev,False,
+TX-D08-004,dev-08,2026-10-26,17:33,5527.68,5527.68,Vendor Payment,ACC-1015,Vendor,1309,KZ,AE,available,1,1,0,0,0,0,1.97,0.15,Low,Posted,dev,False,
+TX-D08-005,dev-08,2026-10-26,17:48,24106.02,24106.02,Vendor Payment,ACC-1018,Payroll,15,AE,AE,missing,2,0,0,0,0,1,8.61,0.7,High,Under Review,dev,True,large_amount
+TX-D08-006,dev-08,2026-10-26,18:48,8565.72,5775.22,International Wire,ACC-1010,Payroll,834,KZ,US,available,1,1,0,0,0,0,1.43,0.15,Low,Posted,dev,True,record_mismatch
+TX-D08-007,dev-08,2026-10-26,19:57,5194.9,5194.9,International Wire,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.87,0.0,Low,Posted,dev,False,
+TX-D08-008,dev-08,2026-10-27,14:35,6614.65,6614.65,International Wire,ACC-1010,Payroll,834,KZ,KZ,available,1,0,0,0,0,0,1.1,0.0,Low,Posted,dev,False,
+TX-D08-009,dev-08,2026-10-27,14:55,1865.26,1865.26,Vendor Payment,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.67,0.0,Low,Posted,dev,False,
+TX-D08-010,dev-08,2026-10-27,16:24,151.76,151.76,Office Supplies,ACC-1011,Vendor,798,KZ,KZ,missing,1,0,0,0,0,0,1.01,0.25,Medium,Posted,dev,False,
+TX-D08-011,dev-08,2026-10-28,02:18,5959.47,5959.47,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,1,0,1,0,0,0,0.99,0.1,Low,Pending,dev,False,
+TX-D08-012,dev-08,2026-10-28,12:39,343.13,343.13,Software Subscription,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.38,0.0,Low,Posted,dev,False,
+TX-D08-013,dev-08,2026-10-28,13:49,28694.35,28694.35,International Wire,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,4.78,0.3,Medium,Posted,dev,False,
+TX-D08-014,dev-08,2026-10-28,17:52,2781.67,2781.67,Payroll,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,0.62,0.05,Low,Posted,dev,False,
+TX-D08-015,dev-08,2026-10-28,19:35,123.86,123.86,Office Supplies,ACC-1007,Vendor,2104,KZ,KZ,available,2,0,0,0,0,0,0.83,0.05,Low,Posted,dev,False,
+TX-D08-016,dev-08,2026-10-29,00:28,140.91,140.91,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,1,0,0,0,0.94,0.1,Low,Posted,dev,False,
+TX-D08-017,dev-08,2026-10-29,09:26,430.04,430.04,Software Subscription,ACC-1013,Operating,2292,KZ,KZ,available,1,0,0,0,0,0,0.48,0.0,Low,Posted,dev,False,
+TX-D08-018,dev-08,2026-10-29,18:54,361.42,361.42,Client Refund,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,1.03,0.0,Low,Posted,dev,False,
+TX-D08-019,dev-08,2026-10-30,10:32,7076.87,7076.87,International Wire,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.18,0.0,Low,Posted,dev,False,
+TX-D08-020,dev-08,2026-10-30,22:36,3721.45,3721.45,Software Subscription,ACC-1017,Operating,432,DE,DE,available,1,0,1,0,0,0,4.13,0.4,Medium,Posted,dev,True,large_amount
+TX-D08-021,dev-08,2026-10-31,10:35,73.74,73.74,Office Supplies,ACC-1012,Treasury,2199,KZ,KZ,available,1,0,0,0,0,0,0.49,0.0,Low,Pending,dev,False,
+TX-D08-022,dev-08,2026-11-01,09:01,1023.03,1023.03,Vendor Payment,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.37,0.0,Low,Posted,dev,False,
+TX-D08-023,dev-08,2026-11-02,12:19,397.09,397.09,Software Subscription,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,0.44,0.0,Low,Posted,dev,False,
+TX-D08-024,dev-08,2026-11-02,13:13,1030.06,1030.06,Vendor Payment,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.37,0.1,Low,Posted,dev,False,
+TX-D08-025,dev-08,2026-11-02,16:51,877.98,877.98,Software Subscription,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,0.98,0.0,Low,Posted,dev,False,
+TX-D08-026,dev-08,2026-11-02,19:20,5268.0,5268.0,Payroll,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,1.17,0.1,Low,Pending,dev,False,
+TX-D08-027,dev-08,2026-11-02,19:51,6644.15,6644.15,International Wire,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.11,0.0,Low,Posted,dev,False,
+TX-D08-028,dev-08,2026-11-03,13:49,560.58,560.58,Software Subscription,ACC-1009,Operating,252,KZ,KZ,missing,1,0,0,0,0,0,0.62,0.25,Medium,Posted,dev,False,
+TX-D08-029,dev-08,2026-11-03,17:56,9916.5,9916.5,International Wire,ACC-1007,Vendor,2104,KZ,TR,available,1,1,0,0,1,0,1.65,0.3,Medium,Posted,dev,False,
+TX-D08-030,dev-08,2026-11-04,00:36,616.06,616.06,Client Refund,ACC-1019,Vendor,30,GB,KZ,missing,1,1,1,0,0,1,1.76,0.6,High,Under Review,dev,True,foreign_offhours
+TX-D08-031,dev-08,2026-11-04,04:41,5199.97,5199.97,Vendor Payment,ACC-1020,Treasury,45,TR,GB,available,1,1,1,0,0,1,1.86,0.35,Medium,Posted,dev,True,foreign_offhours
+TX-D08-032,dev-08,2026-11-04,05:06,400.0,400.0,Utilities,ACC-1012,Treasury,2199,KZ,US,available,1,1,1,0,0,0,0.67,0.25,Medium,Posted,dev,False,
+TX-D08-033,dev-08,2026-11-04,08:11,292.77,292.77,Travel & Expenses,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,0.65,0.0,Low,Pending,dev,False,
+TX-D08-034,dev-08,2026-11-04,18:54,7463.94,7463.94,Vendor Payment,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,2.67,0.1,Low,Pending,dev,False,
+TX-D08-035,dev-08,2026-11-05,09:38,611.74,611.74,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,1.36,0.0,Low,Posted,dev,False,
+TX-D08-036,dev-08,2026-11-05,12:07,9230.0,9230.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.54,0.3,Medium,Posted,dev,True,structuring
+TX-D08-037,dev-08,2026-11-05,14:22,9290.0,9290.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,0,1,0,1.55,0.3,Medium,Posted,dev,True,structuring
+TX-D08-038,dev-08,2026-11-05,16:00,9600.0,9600.0,International Wire,ACC-1009,Operating,252,KZ,KZ,available,3,0,0,1,1,0,1.6,0.4,Medium,Posted,dev,True,structuring
+TX-D08-039,dev-08,2026-11-06,00:59,700.0,700.0,Utilities,ACC-1014,Payroll,132,KZ,KZ,available,1,0,1,0,0,0,1.17,0.1,Low,Posted,dev,False,
+TX-D08-040,dev-08,2026-11-07,11:37,7454.59,7454.59,International Wire,ACC-1005,Operating,1496,KZ,KZ,available,1,0,0,0,0,0,1.24,0.0,Low,Pending,dev,False,
+TX-D09-001,dev-09,2026-11-09,09:27,3927.98,3927.98,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,0.87,0.0,Low,Posted,dev,False,
+TX-D09-002,dev-09,2026-11-09,12:23,4384.23,5686.64,International Wire,ACC-1005,Operating,1496,KZ,KZ,missing,1,0,0,0,0,0,0.73,0.25,Medium,Pending,dev,True,record_mismatch
+TX-D09-003,dev-09,2026-11-09,17:44,306.83,306.83,Client Refund,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.88,0.0,Low,Pending,dev,False,
+TX-D09-004,dev-09,2026-11-09,18:37,290.42,290.42,Office Supplies,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,1.94,0.0,Low,Pending,dev,False,
+TX-D09-005,dev-09,2026-11-10,11:34,5676.08,5676.08,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,0,0,0.95,0.05,Low,Pending,dev,False,
+TX-D09-006,dev-09,2026-11-10,18:15,2621.22,2621.22,Vendor Payment,ACC-1018,Payroll,15,AE,AE,available,1,0,0,0,0,1,0.94,0.1,Low,Posted,dev,False,
+TX-D09-007,dev-09,2026-11-10,19:56,9370.0,9370.0,International Wire,ACC-1013,Operating,2292,KZ,KZ,available,2,0,0,0,1,0,1.56,0.2,Low,Posted,dev,True,structuring
+TX-D09-008,dev-09,2026-11-10,22:03,21794.32,21794.32,Payroll,ACC-1011,Vendor,798,KZ,KZ,available,1,0,1,0,0,0,4.84,0.4,Medium,Pending,dev,False,
+TX-D09-009,dev-09,2026-11-11,00:04,4994.28,4994.28,Software Subscription,ACC-1001,Operating,2368,KZ,KZ,available,1,0,1,0,0,0,5.55,0.4,Medium,Pending,dev,True,large_amount
+TX-D09-010,dev-09,2026-11-11,08:12,330.32,330.32,Client Refund,ACC-1007,Vendor,2104,KZ,KZ,available,1,0,0,0,0,0,0.94,0.0,Low,Posted,dev,False,
+TX-D09-011,dev-09,2026-11-12,04:32,612.29,612.29,Client Refund,ACC-1009,Operating,252,KZ,KZ,available,1,0,1,0,0,0,1.75,0.1,Low,Posted,dev,False,
+TX-D09-012,dev-09,2026-11-12,09:33,9710.0,9710.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,missing,3,0,0,0,1,0,3.47,0.85,High,Under Review,dev,True,structuring
+TX-D09-013,dev-09,2026-11-12,11:28,9290.0,9290.0,Vendor Payment,ACC-1004,Treasury,2255,KZ,KZ,available,3,0,0,0,1,0,3.32,0.6,High,Under Review,dev,True,structuring
+TX-D09-014,dev-09,2026-11-12,14:24,9530.0,9530.0,International Wire,ACC-1004,Treasury,2255,KZ,KZ,available,3,0,0,0,1,0,1.59,0.3,Medium,Posted,dev,True,structuring
+TX-D09-015,dev-09,2026-11-13,01:56,514.5,514.5,Office Supplies,ACC-1020,Treasury,45,TR,US,available,1,1,1,0,0,1,3.43,0.65,High,Under Review,dev,True,foreign_offhours
+TX-D09-016,dev-09,2026-11-13,14:47,242.1,242.1,Travel & Expenses,ACC-1014,Payroll,132,KZ,KZ,available,1,0,0,0,0,0,0.54,0.0,Low,Pending,dev,False,
+TX-D09-017,dev-09,2026-11-13,18:56,492.97,492.97,Travel & Expenses,ACC-1015,Vendor,1309,KZ,KZ,available,1,0,0,0,0,0,1.1,0.0,Low,Posted,dev,False,
+TX-D09-018,dev-09,2026-11-14,13:50,782.24,782.24,Travel & Expenses,ACC-1006,Payroll,1966,KZ,KZ,available,1,0,0,0,0,0,1.74,0.0,Low,Posted,dev,False,
+TX-D09-019,dev-09,2026-11-16,05:49,2000.0,2000.0,Software Subscription,ACC-1017,Operating,432,DE,DE,available,2,0,1,1,0,0,2.22,0.35,Medium,Posted,dev,False,
+TX-D09-020,dev-09,2026-11-16,11:43,3727.9,3727.9,Payroll,ACC-1017,Operating,432,DE,DE,available,2,0,0,0,0,0,0.83,0.05,Low,Posted,dev,False,
+TX-D09-021,dev-09,2026-11-16,13:20,589.94,589.94,Client Refund,ACC-1008,Treasury,655,KZ,KZ,available,1,0,0,0,0,0,1.69,0.0,Low,Posted,dev,False,
+TX-D09-022,dev-09,2026-11-16,17:33,140.64,140.64,Office Supplies,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,0.94,0.05,Low,Posted,dev,False,
+TX-D09-023,dev-09,2026-11-16,23:14,2003.81,2003.81,Travel & Expenses,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,1,0,0,0,4.45,0.45,Medium,Posted,dev,True,large_amount
+TX-D09-024,dev-09,2026-11-17,13:00,293.94,293.94,Travel & Expenses,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,0,0,0,0,0.65,0.0,Low,Posted,dev,False,
+TX-D09-025,dev-09,2026-11-17,13:55,194.56,194.56,Travel & Expenses,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.43,0.0,Low,Posted,dev,False,
+TX-D09-026,dev-09,2026-11-17,16:10,1836.49,1836.49,Client Refund,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,5.25,0.3,Medium,Posted,dev,False,
+TX-D09-027,dev-09,2026-11-17,17:15,200.0,200.0,Office Supplies,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,1.33,0.0,Low,Posted,dev,False,
+TX-D09-028,dev-09,2026-11-18,08:14,331.7,331.7,Travel & Expenses,ACC-1004,Treasury,2255,KZ,KZ,available,1,0,0,0,0,0,0.74,0.0,Low,Posted,dev,False,
+TX-D09-029,dev-09,2026-11-19,14:01,284.4,284.4,Office Supplies,ACC-1001,Operating,2368,KZ,KZ,available,1,0,0,0,0,0,1.9,0.0,Low,Posted,dev,False,
+TX-D09-030,dev-09,2026-11-20,03:29,5260.56,5260.56,Payroll,ACC-1002,Payroll,1607,KZ,KZ,available,1,0,1,0,0,0,1.17,0.1,Low,Posted,dev,False,
+TX-D09-031,dev-09,2026-11-20,04:52,4019.78,4019.78,Payroll,ACC-1013,Operating,2292,KZ,KZ,available,1,0,1,0,0,0,0.89,0.1,Low,Pending,dev,False,
+TX-D09-032,dev-09,2026-11-20,13:01,2943.89,2943.89,Travel & Expenses,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,0,0,6.54,0.35,Medium,Posted,dev,True,large_amount
+TX-D09-033,dev-09,2026-11-20,13:12,9565.68,9565.68,International Wire,ACC-1003,Vendor,1748,KZ,KZ,available,2,0,0,0,1,0,1.59,0.2,Low,Posted,dev,False,
+TX-D09-034,dev-09,2026-11-20,13:54,228.1,228.1,Travel & Expenses,ACC-1009,Operating,252,KZ,KZ,available,1,0,0,0,0,0,0.51,0.0,Low,Posted,dev,False,
+TX-D09-035,dev-09,2026-11-20,17:36,7663.64,7663.64,International Wire,ACC-1011,Vendor,798,KZ,KZ,available,1,0,0,0,0,0,1.28,0.0,Low,Posted,dev,False,
+TX-D09-036,dev-09,2026-11-20,18:12,709.23,709.23,Vendor Payment,ACC-1019,Vendor,30,GB,GB,available,1,0,0,0,0,1,0.25,0.1,Low,Posted,dev,False,
+TX-D09-037,dev-09,2026-11-21,14:01,381.23,381.23,Travel & Expenses,ACC-1020,Treasury,45,TR,TR,available,1,0,0,0,0,1,0.85,0.1,Low,Posted,dev,False,
+TX-D09-038,dev-09,2026-11-21,18:59,3687.88,3687.88,Payroll,ACC-1017,Operating,432,DE,DE,available,1,0,0,0,0,0,0.82,0.0,Low,Posted,dev,False,
+TX-D09-039,dev-09,2026-11-22,02:44,391.48,391.48,Client Refund,ACC-1018,Payroll,15,AE,DE,available,1,1,1,0,0,1,1.12,0.35,Medium,Posted,dev,True,foreign_offhours
+TX-D09-040,dev-09,2026-11-22,16:35,789.23,789.23,Travel & Expenses,ACC-1015,Vendor,1309,KZ,US,available,1,1,0,0,0,0,1.75,0.15,Low,Posted,dev,False,

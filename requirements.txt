@@ -1,0 +1,11 @@
+# Core (needed to run the website and the tests)
+fastapi>=0.110
+uvicorn>=0.27
+gymnasium>=0.29
+numpy>=1.24
+pandas>=2.0
+# Testing
+pytest>=7.4
+httpx>=0.25
+# Optional: only if you want to experiment with Stable-Baselines3 yourselves (NOT used by this project)
+# stable-baselines3>=2.2

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuditRL · FinTech RL Environment for Audit</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="logo">A</span>
+      <div><b>AuditRL</b><small>RL Environment for Audit</small></div>
+    </div>
+    <nav id="nav">
+      <a href="#dashboard" data-page="dashboard"><i>▦</i>Dashboard</a>
+      <a href="#transactions" data-page="transactions"><i>≣</i>Transactions</a>
+      <a href="#agent" data-page="agent"><i>◉</i>AI Audit Agent</a>
+      <a href="#reports" data-page="reports"><i>▤</i>Audit Reports</a>
+      <a href="#environment" data-page="environment"><i>⟲</i>RL Environment</a>
+    </nav>
+    <div class="side-foot">
+      <button id="demo-btn" class="btn primary block">▶ Start demo mode</button>
+      <p class="muted small">Hackathon prototype.<br>Synthetic data only.</p>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+    <header class="topbar">
+      <h1 id="page-title">Dashboard</h1>
+      <span id="status-pill" class="pill neutral">Connecting…</span>
+    </header>
+    <div id="banner" class="banner hidden"></div>
+
+    <!-- ============ A. DASHBOARD ============ -->
+    <section id="page-dashboard" class="page">
+      <div class="toolbar">
+        <label>Policy
+          <select id="dash-policy"></select>
+        </label>
+        <label>Episodes
+          <select id="dash-split">
+            <option value="dev">Development (unseen) episodes</option>
+            <option value="train">Training episodes</option>
+          </select>
+        </label>
+        <span class="muted small" id="dash-scope"></span>
+      </div>
+
+      <div class="kpis" id="kpis"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Agent performance: reward per episode</h3>
+          <div id="chart-rewards"></div>
+          <div id="legend-rewards" class="legend"></div>
+        </div>
+        <div class="card">
+          <h3>Learning curve of the RL agent</h3>
+          <div id="chart-learning"></div>
+          <p class="muted small" id="learning-note"></p>
+        </div>
+      </div>
+
+      <div class="card" id="compare-card">
+        <h3>Policy comparison</h3>
+        <div class="table-wrap">
+          <table id="compare-table"></table>
+        </div>
+        <p class="muted small" id="compare-note"></p>
+      </div>
+    </section>
+
+    <!-- ============ B. TRANSACTIONS ============ -->
+    <section id="page-transactions" class="page hidden">
+      <div class="card">
+        <div class="filters">
+          <input id="tx-search" type="search" placeholder="Search ID, account, category, amount…">
+          <select id="tx-split">
+            <option value="all">All episodes</option>
+            <option value="train">Training set</option>
+            <option value="dev">Development set</option>
+          </select>
+          <select id="tx-episode"></select>
+          <select id="tx-category"></select>
+          <select id="tx-risk">
+            <option value="">All risk levels</option>
+            <option>Low</option><option>Medium</option><option>High</option>
+          </select>
+          <select id="tx-status">
+            <option value="">All statuses</option>
+            <option>Posted</option><option>Pending</option><option>Under Review</option>
+          </select>
+          <label class="check"><input id="tx-truth" type="checkbox"> Show synthetic ground truth</label>
+        </div>
+        <div class="table-wrap">
+          <table id="tx-table"></table>
+        </div>
+        <div class="pager">
+          <span id="tx-count" class="muted small"></span>
+          <span>
+            <button id="tx-prev" class="btn ghost small">‹ Prev</button>
+            <span id="tx-page" class="muted small"></span>
+            <button id="tx-next" class="btn ghost small">Next ›</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ C. AI AUDIT AGENT ============ -->
+    <section id="page-agent" class="page hidden">
+      <div class="grid-agent">
+        <div class="card">
+          <h3>Audit episode</h3>
+          <div class="form-grid">
+            <label>Episode set
+              <select id="ag-split">
+                <option value="dev">Development (unseen)</option>
+                <option value="train">Training</option>
+              </select>
+            </label>
+            <label>Episode
+              <select id="ag-episode"></select>
+            </label>
+            <label class="span2">Who audits?
+              <select id="ag-policy"></select>
+            </label>
+          </div>
+          <div class="btn-row">
+            <button id="ag-start" class="btn primary">Start audit episode</button>
+            <button id="ag-step" class="btn" disabled>Step once</button>
+            <button id="ag-run" class="btn" disabled>Run agent</button>
+          </div>
+          <div id="manual-actions" class="manual hidden">
+            <p class="muted small">You are the auditor. Choose an action for the current transaction:</p>
+            <div class="btn-row">
+              <button class="btn act-approve" data-action="approve">Approve</button>
+              <button class="btn act-flag" data-action="flag">Flag</button>
+              <button class="btn act-docs" data-action="request_docs">Request docs</button>
+              <button class="btn act-inv" data-action="investigate">Investigate</button>
+            </div>
+          </div>
+          <div class="progress"><div id="ag-progress"></div></div>
+          <div class="mini-stats">
+            <div><small>Decided</small><b id="ag-decided">–</b></div>
+            <div><small>Steps</small><b id="ag-steps">–</b></div>
+            <div><small>Total reward</small><b id="ag-reward">–</b></div>
+            <div><small>Status</small><b id="ag-status">Not started</b></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Current transaction</h3>
+          <div id="ag-current" class="muted">Start an audit episode to see transactions here.</div>
+        </div>
+      </div>
+
+      <div id="ag-result" class="card hidden"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Agent decisions and rewards</h3>
+          <div class="table-wrap tall"><table id="ag-log"></table></div>
+        </div>
+        <div class="card">
+          <h3>Flagged transactions</h3>
+          <div id="ag-flagged" class="muted">Nothing flagged yet.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. AUDIT REPORTS ============ -->
+    <section id="page-reports" class="page hidden">
+      <div class="toolbar">
+        <label>Report for
+          <select id="rp-source">
+            <option value="session">Latest run on the AI Audit Agent page</option>
+            <option value="episode">Choose an episode and policy</option>
+          </select>
+        </label>
+        <span id="rp-custom" class="inline-controls hidden">
+          <select id="rp-split"><option value="dev">Development</option><option value="train">Training</option></select>
+          <select id="rp-episode"></select>
+          <select id="rp-policy"></select>
+        </span>
+        <button id="rp-generate" class="btn primary">Generate report</button>
+        <span class="spacer"></span>
+        <button id="rp-json" class="btn">Export JSON</button>
+        <button id="rp-csv" class="btn">Export CSV</button>
+      </div>
+      <div id="rp-empty" class="card muted hidden"></div>
+      <div id="rp-body" class="hidden">
+        <div class="kpis" id="rp-kpis"></div>
+        <div class="card">
+          <h3>Final audit summary</h3>
+          <p id="rp-narrative" class="narrative"></p>
+          <p class="muted small" id="rp-meta"></p>
+        </div>
+        <div class="card">
+          <h3>Detected anomalies <span class="muted small">(transactions flagged by the agent)</span></h3>
+          <div class="table-wrap"><table id="rp-anomalies"></table></div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Incorrect transactions <span class="muted small">(ledger ≠ invoice)</span></h3>
+            <div class="table-wrap"><table id="rp-incorrect"></table></div>
+          </div>
+          <div class="card">
+            <h3>Missing documents</h3>
+            <div class="table-wrap"><table id="rp-missing"></table></div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Risk assessment</h3>
+            <div id="rp-risk"></div>
+          </div>
+          <div class="card">
+            <h3>Missed suspicious transactions <span class="muted small">(known only because the data is synthetic)</span></h3>
+            <div class="table-wrap"><table id="rp-missed"></table></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E. RL ENVIRONMENT ============ -->
+    <section id="page-environment" class="page hidden">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Live environment state</h3>
+          <div class="env-grid" id="env-state"></div>
+          <div class="btn-row">
+            <button id="env-start" class="btn primary">Start episode</button>
+            <button id="env-step" class="btn" disabled>Step agent</button>
+            <button id="env-refresh" class="btn ghost">Refresh</button>
+          </div>
+          <h4>Observation (what the agent sees)</h4>
+          <div id="env-obs" class="muted">No active episode.</div>
+        </div>
+        <div class="card">
+          <h3>How the environment works</h3>
+          <svg id="env-diagram" viewBox="0 0 640 250" class="diagram" role="img"
+               aria-label="Diagram: the agent sends an action to the audit environment, which returns an observation and a reward.">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" class="arrow-head"/>
+              </marker>
+            </defs>
+            <rect x="10" y="60" width="190" height="130" rx="14" class="box agent"/>
+            <text x="105" y="95" class="box-title" text-anchor="middle">AI Audit Agent</text>
+            <text x="105" y="120" text-anchor="middle" class="box-sub">policy: random, rules,</text>
+            <text x="105" y="138" text-anchor="middle" class="box-sub">risk threshold or RL</text>
+            <text x="105" y="165" text-anchor="middle" class="box-sub">learns from rewards</text>
+            <rect x="440" y="60" width="190" height="130" rx="14" class="box env"/>
+            <text x="535" y="95" class="box-title" text-anchor="middle">Audit Environment</text>
+            <text x="535" y="120" text-anchor="middle" class="box-sub">40 synthetic transactions</text>
+            <text x="535" y="138" text-anchor="middle" class="box-sub">per episode, hidden labels</text>
+            <text x="535" y="165" text-anchor="middle" class="box-sub">computes the reward</text>
+            <path d="M205,95 L435,95" class="arrow" marker-end="url(#arrow)"/>
+            <text x="320" y="82" text-anchor="middle" class="flow-title">① action</text>
+            <text x="320" y="60" text-anchor="middle" class="flow-sub">approve · flag · request docs · investigate</text>
+            <path d="M435,160 L205,160" class="arrow" marker-end="url(#arrow)"/>
+            <text x="320" y="182" text-anchor="middle" class="flow-title">② observation + reward</text>
+            <text x="320" y="200" text-anchor="middle" class="flow-sub">amount, documents, risk, history · +10 / −10 …</text>
+            <text x="320" y="235" text-anchor="middle" class="flow-sub">repeat until all 40 transactions are decided → episode ends</text>
+          </svg>
+          <ol class="steps-list">
+            <li>The environment shows <b>one transaction</b> (the observation).</li>
+            <li>The agent may <b>investigate</b> or <b>request documents</b> (costs a small penalty, reveals information) and then must <b>approve</b> or <b>flag</b>.</li>
+            <li>The environment compares the decision with the hidden truth and returns a <b>reward</b>.</li>
+            <li>After the last transaction the episode ends and the metrics are computed.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Reward function</h3>
+          <div class="table-wrap"><table id="env-rewards"></table></div>
+        </div>
+        <div class="card">
+          <h3>Observation space (15 numbers, each 0…1)</h3>
+          <div class="table-wrap tall"><table id="env-fields"></table></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="demo-caption" class="demo-caption hidden">
+  <span id="demo-text"></span>
+  <button id="demo-stop" class="btn small">Stop demo</button>
+</div>
+<div id="tooltip" class="tooltip hidden"></div>
+
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

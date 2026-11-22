@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "episodes": 10,
+    "transactions": 400,
+    "suspicious": 80,
+    "legitimate": 320,
+    "missing_documents": 44,
+    "record_mismatches": 11,
+    "anomaly_types": {
+      "structuring": 29,
+      "large_amount": 19,
+      "foreign_offhours": 16,
+      "record_mismatch": 11,
+      "missing_document": 5
+    }
+  },
+  "train": {
+    "episodes": 10,
+    "transactions": 400,
+    "suspicious": 80,
+    "legitimate": 320,
+    "missing_documents": 58,
+    "record_mismatches": 11,
+    "anomaly_types": {
+      "structuring": 31,
+      "large_amount": 17,
+      "foreign_offhours": 12,
+      "record_mismatch": 11,
+      "missing_document": 9
+    }
+  }
+}
